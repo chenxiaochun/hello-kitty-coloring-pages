@@ -5,8 +5,13 @@ export type ColoringPage = {
   title: string;
   category: Category;
   popular?: boolean;
-  thumbnailVariant: 1 | 2 | 3 | 4 | 5 | 6;
+  /** Path under /public, e.g. /assets/coloring-pages/birthday-kitty/line-art.svg */
+  lineArtSrc: string;
 };
+
+export function getLineArtSrc(id: string, filename = "line-art.jpg"): string {
+  return `/assets/coloring-pages/${id}/${filename}`;
+}
 
 export const CATEGORIES: { id: Category | "all"; label: string; accent: string }[] = [
   { id: "all", label: "All", accent: "var(--kitty-pink)" },
@@ -21,52 +26,52 @@ export const COLORING_PAGES: ColoringPage[] = [
     title: "Birthday Kitty",
     category: "holidays",
     popular: true,
-    thumbnailVariant: 1,
+    lineArtSrc: getLineArtSrc("birthday-kitty"),
   },
   {
     id: "garden-party",
     title: "Garden Party",
     category: "daily-life",
     popular: true,
-    thumbnailVariant: 2,
+    lineArtSrc: getLineArtSrc("garden-party"),
   },
   {
     id: "best-friends",
     title: "Best Friends",
     category: "friends",
     popular: true,
-    thumbnailVariant: 3,
+    lineArtSrc: getLineArtSrc("best-friends"),
   },
   {
     id: "spring-picnic",
     title: "Spring Picnic",
     category: "daily-life",
-    thumbnailVariant: 4,
+    lineArtSrc: getLineArtSrc("spring-picnic"),
   },
   {
     id: "hello-holiday",
     title: "Holiday Bow",
     category: "holidays",
-    thumbnailVariant: 5,
+    lineArtSrc: getLineArtSrc("hello-holiday"),
   },
   {
     id: "tea-time",
     title: "Tea Time",
     category: "daily-life",
     popular: true,
-    thumbnailVariant: 6,
+    lineArtSrc: getLineArtSrc("tea-time"),
   },
   {
     id: "playground-fun",
     title: "Playground Fun",
     category: "friends",
-    thumbnailVariant: 1,
+    lineArtSrc: getLineArtSrc("playground-fun"),
   },
   {
     id: "starlight-dream",
     title: "Starlight Dream",
     category: "holidays",
-    thumbnailVariant: 2,
+    lineArtSrc: getLineArtSrc("starlight-dream"),
   },
 ];
 

@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "generate:line-art": "node scripts/generate-line-art.mjs",
+    "import:line-art": "node scripts/import-reference-line-art.mjs"
   },
   "dependencies": {
     "next": "16.2.7",

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { ColoringPage } from "@/lib/data/coloring-pages";
-import { ThumbnailArt } from "./ThumbnailArt";
+import { LineArtImage } from "./LineArtImage";
 
 type ColoringPageCardProps = {
   page: ColoringPage;
@@ -16,9 +16,10 @@ export function ColoringPageCard({ page, compact = false }: ColoringPageCardProp
       }`}
     >
       <div className="aspect-square overflow-hidden bg-[var(--soft-pink)]/30 p-3">
-        <ThumbnailArt
-          variant={page.thumbnailVariant}
-          className="h-full w-full transition-transform group-hover:scale-105"
+        <LineArtImage
+          src={page.lineArtSrc}
+          alt={`${page.title} coloring page`}
+          className="transition-transform group-hover:scale-105"
         />
       </div>
       <div className="border-t-2 border-[var(--soft-pink)] px-3 py-3">
