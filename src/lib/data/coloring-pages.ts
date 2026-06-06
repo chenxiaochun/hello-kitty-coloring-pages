@@ -1,3 +1,5 @@
+import catalog from "./coloring-page-catalog.json";
+
 export type Category = "friends" | "holidays" | "daily-life";
 
 export type ColoringPage = {
@@ -5,7 +7,6 @@ export type ColoringPage = {
   title: string;
   category: Category;
   popular?: boolean;
-  /** Path under /public, e.g. /assets/coloring-pages/birthday-kitty/line-art.svg */
   lineArtSrc: string;
 };
 
@@ -20,60 +21,13 @@ export const CATEGORIES: { id: Category | "all"; label: string; accent: string }
   { id: "daily-life", label: "Daily Life", accent: "var(--candy-purple)" },
 ];
 
-export const COLORING_PAGES: ColoringPage[] = [
-  {
-    id: "birthday-kitty",
-    title: "Birthday Kitty",
-    category: "holidays",
-    popular: true,
-    lineArtSrc: getLineArtSrc("birthday-kitty"),
-  },
-  {
-    id: "garden-party",
-    title: "Garden Party",
-    category: "daily-life",
-    popular: true,
-    lineArtSrc: getLineArtSrc("garden-party"),
-  },
-  {
-    id: "best-friends",
-    title: "Best Friends",
-    category: "friends",
-    popular: true,
-    lineArtSrc: getLineArtSrc("best-friends"),
-  },
-  {
-    id: "spring-picnic",
-    title: "Spring Picnic",
-    category: "daily-life",
-    lineArtSrc: getLineArtSrc("spring-picnic"),
-  },
-  {
-    id: "hello-holiday",
-    title: "Holiday Bow",
-    category: "holidays",
-    lineArtSrc: getLineArtSrc("hello-holiday"),
-  },
-  {
-    id: "tea-time",
-    title: "Tea Time",
-    category: "daily-life",
-    popular: true,
-    lineArtSrc: getLineArtSrc("tea-time"),
-  },
-  {
-    id: "playground-fun",
-    title: "Playground Fun",
-    category: "friends",
-    lineArtSrc: getLineArtSrc("playground-fun"),
-  },
-  {
-    id: "starlight-dream",
-    title: "Starlight Dream",
-    category: "holidays",
-    lineArtSrc: getLineArtSrc("starlight-dream"),
-  },
-];
+export const COLORING_PAGES: ColoringPage[] = catalog.map((entry) => ({
+  id: entry.id,
+  title: entry.title,
+  category: entry.category as Category,
+  ...(entry.popular ? { popular: true } : {}),
+  lineArtSrc: getLineArtSrc(entry.id),
+}));
 
 export function getColoringPage(id: string): ColoringPage | undefined {
   return COLORING_PAGES.find((page) => page.id === id);

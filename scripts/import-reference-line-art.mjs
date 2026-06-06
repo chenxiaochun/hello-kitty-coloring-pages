@@ -1,5 +1,5 @@
 import sharp from "sharp";
-import { access, mkdir, writeFile } from "node:fs/promises";
+import { access, mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { execSync } from "node:child_process";
@@ -8,31 +8,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
 const OUT_DIR = path.join(ROOT, "public/assets/coloring-pages");
 const REF_DIR = path.join(ROOT, "_reference");
-
-/** Maps our page ids → Monday Mandala preview assets (reference only). */
-const PAGE_SOURCES = {
-  "birthday-kitty": "Happy-Birthday-Hello-Kitty-Coloring-Page-791x1024.jpg",
-  "garden-party": "Princess-Hello-Kitty-In-Flower-Field-791x1024.jpg",
-  "best-friends": "Hello-Kitty-With-Pompompurin-And-Cinnamoroll-791x1024.jpg",
-  "spring-picnic": "Hello-Kitty-Enjoying-Picnic-791x1024.jpg",
-  "hello-holiday":
-    "Hello-Kitty-With-Present-And-Christmas-Tree-Coloring-In-791x1024.jpg",
-  "tea-time": "Waitress-Hello-Kitty-Serving-Cake-Coloring-Sheet-791x1024.jpg",
-  "playground-fun":
-    "Hello-Kitty-Playing-In-The-Pool-With-Friends-791x1024.jpg",
-  "starlight-dream": "Coloring-Sheet-Of-Winter-Hello-Kitty-Fairy-791x1024.jpg",
-};
-
-const PAGE_CONFIG = {
-  "birthday-kitty": { bottomTrim: 96 },
-  "garden-party": { bottomTrim: 120 },
-  "best-friends": { bottomTrim: 120 },
-  "spring-picnic": { bottomTrim: 112 },
-  "hello-holiday": { bottomTrim: 100 },
-  "tea-time": { bottomTrim: 108 },
-  "playground-fun": { bottomTrim: 140, rightStripWidth: 118 },
-  "starlight-dream": { bottomTrim: 100 },
-};
+const CATALOG_PATH = path.join(ROOT, "src/lib/data/coloring-page-catalog.json");
 
 const REMOTE_BASE = "https://mondaymandala.com/wp-content/uploads/";
 
@@ -90,8 +66,8 @@ async function ensureReference(filename) {
   return localPath;
 }
 
-async function removeWatermark(inputPath, outputPath, pageId) {
-  const config = PAGE_CONFIG[pageId] ?? { bottomTrim: 100 };
+async function removeWatermark(inputPath, outputPath, config) {
+  const bottomTrim = config.bottomTrim ?? 100;
   const image = sharp(inputPath);
   const { width, height } = await image.metadata();
 
@@ -99,7 +75,7 @@ async function removeWatermark(inputPath, outputPath, pageId) {
     throw new Error(`Could not read image dimensions: ${inputPath}`);
   }
 
-  const cropHeight = Math.max(1, height - config.bottomTrim);
+  const cropHeight = Math.max(1, height - bottomTrim);
 
   const { data, info } = await sharp(inputPath)
     .extract({ left: 0, top: 0, width, height: cropHeight })
@@ -118,28 +94,36 @@ async function removeWatermark(inputPath, outputPath, pageId) {
   return { width: info.width, height: info.height };
 }
 
+const catalog = JSON.parse(await readFile(CATALOG_PATH, "utf8"));
+
 await mkdir(OUT_DIR, { recursive: true });
 
 const manifest = [];
 
-for (const [pageId, filename] of Object.entries(PAGE_SOURCES)) {
-  const source = await ensureReference(filename);
-  const pageDir = path.join(OUT_DIR, pageId);
+for (const entry of catalog) {
+  const { id, source } = entry;
+  const config = {
+    bottomTrim: entry.bottomTrim,
+    rightStripWidth: entry.rightStripWidth,
+  };
+
+  const ref = await ensureReference(source);
+  const pageDir = path.join(OUT_DIR, id);
   await mkdir(pageDir, { recursive: true });
 
   const output = path.join(pageDir, "line-art.jpg");
-  const dimensions = await removeWatermark(source, output, pageId);
+  const dimensions = await removeWatermark(ref, output, config);
 
   manifest.push({
-    id: pageId,
-    lineArtSrc: `/assets/coloring-pages/${pageId}/line-art.jpg`,
+    id,
+    lineArtSrc: `/assets/coloring-pages/${id}/line-art.jpg`,
     width: dimensions.width,
     height: dimensions.height,
-    reference: filename,
-    source: `${REMOTE_BASE}${filename}`,
+    reference: source,
+    source: `${REMOTE_BASE}${source}`,
   });
 
-  console.log(`✓ ${pageId} (${dimensions.width}x${dimensions.height})`);
+  console.log(`✓ ${id} (${dimensions.width}x${dimensions.height})`);
 }
 
 await writeFile(
