@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "generate:line-art": "node scripts/generate-line-art.mjs",
-    "import:line-art": "node scripts/import-reference-line-art.mjs"
+    "import:line-art": "node scripts/import-reference-line-art.mjs",
+    "install:ai-line-art": "node scripts/install-ai-line-art.mjs"
   },
   "dependencies": {
     "next": "16.2.7",

@@ -1,0 +1,39 @@
+---
+description: AI 线稿生成规范——纯黑白轮廓，禁止任何预涂色
+alwaysApply: true
+---
+
+# 涂色页线稿生成规范
+
+本项目的线稿是供用户在线涂色的 **空白画布**，不是成品插画。
+
+## 必须遵守
+
+- **只有线稿**：黑色轮廓 + 纯白背景
+- **禁止任何涂色**：不得出现已填色的区域（红蝴蝶结、黄鼻子、粉脸颊、彩色衣服等都不行）
+- **禁止灰度渲染**：不要阴影、渐变、网点、素描排线、半色调
+- **禁止彩色**：整张图只能是黑与白
+
+## 生成时 prompt 必须包含
+
+```
+Pure black line art ONLY on white background.
+NO filled colors, NO gray shading, NO gradients, NO pre-colored areas.
+Every region must be empty white inside the outlines, ready for kids to color.
+```
+
+Hello Kitty 主题额外说明：蝴蝶结、鼻子、衣服等 **全部留空**，只用轮廓线表示，不要替用户涂好颜色。
+
+## 验收标准
+
+生成后目视检查：
+
+1. 除黑色轮廓线外，是否全是白色？
+2. 是否有任何彩色或灰色块？
+3. 是否适合 Magic Fill（封闭区域应为空白）？
+
+任一不满足 → 重新生成，不要入库。
+
+## 入库处理
+
+`npm run install:ai-line-art` 会自动做 **二值化**（灰度 ≥235 → 白，其余 → 黑），去掉 AI 残留的淡色/灰底，确保最终 JPG 只有黑白。

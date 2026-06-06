@@ -13,7 +13,7 @@ export function QuickActions() {
           variant="primary"
         />
         <PillButton
-          href={`/color/${"birthday-kitty"}`}
+          href="/color/birthday-kitty"
           label="Start Coloring"
           icon="✏️"
           variant="secondary"

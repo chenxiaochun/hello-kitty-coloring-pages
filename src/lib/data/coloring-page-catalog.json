@@ -1,431 +1,150 @@
 [
   {
-    "id": "boba-hello-kitty",
-    "title": "Boba Kitty",
-    "category": "daily-life",
-    "source": "Boba-Hello-Kitty-Coloring-Page-791x1024.jpg",
-    "popular": true
-  },
-  {
-    "id": "butterfly-hello-kitty-hugging-mushroom",
-    "title": "Butterfly Hello Kitty Hugging Mushroom",
-    "category": "daily-life",
-    "source": "Butterfly-Hello-Kitty-Hugging-Mushroom-To-Color-791x1024.jpg"
-  },
-  {
-    "id": "christmas-themed-hello-kitty",
-    "title": "Christmas Themed Hello Kitty",
-    "category": "holidays",
-    "source": "Christmas-Themed-Hello-Kitty-Coloring-Sheet-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-with-butterfly-wings",
-    "title": "Hello Kitty With Butterfly Wings",
-    "category": "daily-life",
-    "source": "Coloring-Page-Of-Hello-Kitty-With-Butterfly-Wings-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-and-mimmy-in-the-pool",
-    "title": "Mimmy Pool Day",
-    "category": "friends",
-    "source": "Coloring-Sheet-Of-Hello-Kitty-And-Mimmy-In-The-Pool-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-holding-heart-balloons",
-    "title": "Hello Kitty Holding Heart Balloons",
-    "category": "daily-life",
-    "source": "Coloring-Sheet-Of-Hello-Kitty-Holding-Heart-Balloons-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-holding-strawberry",
-    "title": "Hello Kitty Holding Strawberry",
-    "category": "daily-life",
-    "source": "Coloring-Sheet-Of-Hello-Kitty-Holding-Strawberry-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-sanrio-in-a-field",
-    "title": "Hello Kitty Sanrio In A Field",
-    "category": "daily-life",
-    "source": "Coloring-Sheet-Of-Hello-Kitty-Sanrio-In-A-Field-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-with-valentine-s-day-card",
-    "title": "Valentine's Card",
-    "category": "holidays",
-    "source": "Coloring-Sheet-Of-Hello-Kitty-With-Valentine_s-Day-Card-791x1024.jpg"
-  },
-  {
-    "id": "starlight-dream",
-    "title": "Starlight Dream",
-    "category": "holidays",
-    "source": "Coloring-Sheet-Of-Winter-Hello-Kitty-Fairy-791x1024.jpg",
-    "popular": true,
-    "bottomTrim": 100
-  },
-  {
-    "id": "cute-hello-kitty-holding-heart",
-    "title": "Cute Hello Kitty Holding Heart",
-    "category": "daily-life",
-    "source": "Cute-Coloring-Page-Of-Hello-Kitty-Holding-Heart-791x1024.jpg"
-  },
-  {
-    "id": "cute-hello-kitty-wearing-bunny-ears",
-    "title": "Cute Hello Kitty Wearing Bunny Ears",
-    "category": "daily-life",
-    "source": "Cute-Hello-Kitty-Wearing-Bunny-Ears-791x1024.jpg"
-  },
-  {
-    "id": "cute-hello-kitty-wearing-polka-dots",
-    "title": "Cute Hello Kitty Wearing Polka Dots",
-    "category": "daily-life",
-    "source": "Cute-Hello-Kitty-Wearing-Polka-Dots-791x1024.jpg"
-  },
-  {
-    "id": "cute-kawaii-fairy-hello-kitty",
-    "title": "Cute Kawaii Fairy Hello Kitty",
-    "category": "daily-life",
-    "source": "Cute-Kawaii-Fairy-Hello-Kitty-791x1024.jpg"
-  },
-  {
-    "id": "cute-unicorn-hello-kitty",
-    "title": "Cute Unicorn Hello Kitty",
-    "category": "daily-life",
-    "source": "Cute-Unicorn-Hello-Kitty-For-Preschoolers-791x1024.jpg"
-  },
-  {
-    "id": "easy-hello-kitty-mandala",
-    "title": "Easy Hello Kitty Mandala",
-    "category": "daily-life",
-    "source": "Easy-Hello-Kitty-Mandala-To-Color-791x1024.jpg"
-  },
-  {
-    "id": "easy-hello-kitty-with-crown-and-sash",
-    "title": "Easy Hello Kitty With Crown And Sash",
-    "category": "daily-life",
-    "source": "Easy-Hello-Kitty-With-Crown-And-Sash-For-Preschoolers-791x1024.jpg"
-  },
-  {
-    "id": "emo-hello-kitty",
-    "title": "Emo Hello Kitty",
-    "category": "daily-life",
-    "source": "Emo-Hello-Kitty-Outline-For-Kids-791x1024.jpg"
-  },
-  {
-    "id": "frankenstein-hello-kitty",
-    "title": "Frankenstein Hello Kitty",
-    "category": "holidays",
-    "source": "Frankenstein-Hello-Kitty-Coloring-In-791x1024.jpg"
-  },
-  {
-    "id": "goth-hello-kitty",
-    "title": "Goth Hello Kitty",
-    "category": "daily-life",
-    "source": "Goth-Hello-Kitty-Coloring-Page-791x1024.jpg"
-  },
-  {
-    "id": "goth-punk-hello-kitty",
-    "title": "Goth Punk Hello Kitty",
-    "category": "daily-life",
-    "source": "Goth-Punk-Hello-Kitty-791x1024.jpg"
-  },
-  {
-    "id": "witch-halloween",
-    "title": "Witch Halloween",
-    "category": "holidays",
-    "source": "Halloween-Coloring-Page-Of-Witch-Hello-Kitty-791x1024.jpg"
-  },
-  {
     "id": "birthday-kitty",
     "title": "Birthday Kitty",
     "category": "holidays",
-    "source": "Happy-Birthday-Hello-Kitty-Coloring-Page-791x1024.jpg",
     "popular": true,
-    "bottomTrim": 96
+    "sourceFile": "birthday-kitty-preview.png",
+    "aiGenerated": true
   },
   {
-    "id": "happy-birthday-hello-kitty-with-cake",
-    "title": "Happy Birthday Hello Kitty With Cake",
-    "category": "holidays",
-    "source": "Happy-Birthday-Hello-Kitty-With-Cake-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-princess-party-poster",
-    "title": "Hello Kitty Princess Party Poster",
-    "category": "friends",
-    "source": "Hello-Kitty_s-Princess-Party-Poster-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-and-friends-poster",
-    "title": "Friends Poster",
-    "category": "friends",
-    "source": "Hello-Kitty-_-Friends-Poster-To-Color-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-and-sanrio-friends-playing",
-    "title": "Hello Kitty And Sanrio Friends Playing",
-    "category": "friends",
-    "source": "Hello-Kitty-_-Sanrio-Friends-Playing-To-Color-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-and-joey-on-the-beach",
-    "title": "Hello Kitty And Joey On The Beach",
-    "category": "friends",
-    "source": "Hello-Kitty-And-Joey-On-The-Beach-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-and-mimmy-making-christmas-snowman",
-    "title": "Mimmy Snowman",
-    "category": "holidays",
-    "source": "Hello-Kitty-And-Mimmy-Making-Christmas-Snowman-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-and-pusheen-on-a-cloud",
-    "title": "Pusheen Cloud",
-    "category": "friends",
-    "source": "Hello-Kitty-And-Pusheen-On-A-Cloud-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-and-pusheen-selfie",
-    "title": "Pusheen Selfie",
-    "category": "friends",
-    "source": "Hello-Kitty-And-Pusheen-Selfie-791x1024.jpg",
-    "popular": true
-  },
-  {
-    "id": "hello-kitty-carrying-birthday-cake",
-    "title": "Hello Kitty Carrying Birthday Cake",
-    "category": "holidays",
-    "source": "Hello-Kitty-Carrying-Birthday-Cake-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-collecting-easter-eggs",
-    "title": "Hello Kitty Collecting Easter Eggs",
-    "category": "holidays",
-    "source": "Hello-Kitty-Collecting-Easter-Eggs-Coloring-Sheet-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-dancing-hula",
-    "title": "Hello Kitty Dancing Hula",
-    "category": "daily-life",
-    "source": "Hello-Kitty-Dancing-Hula-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-eating-apple",
-    "title": "Hello Kitty Eating Apple",
-    "category": "daily-life",
-    "source": "Hello-Kitty-Eating-Apple-To-Color-791x1024.jpg"
-  },
-  {
-    "id": "spring-picnic",
-    "title": "Spring Picnic",
-    "category": "daily-life",
-    "source": "Hello-Kitty-Enjoying-Picnic-791x1024.jpg",
-    "popular": true,
-    "bottomTrim": 112
-  },
-  {
-    "id": "hello-kitty-flying-kiss",
-    "title": "Hello Kitty Flying Kiss",
-    "category": "daily-life",
-    "source": "Hello-Kitty-Flying-Kiss-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-halloween",
-    "title": "Hello Kitty Halloween",
-    "category": "holidays",
-    "source": "Hello-Kitty-Halloween-Coloring-Sheet-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-happy-birthday-greeting",
-    "title": "Hello Kitty Happy Birthday Greeting",
-    "category": "holidays",
-    "source": "Hello-Kitty-Happy-Birthday-Greeting-Coloring-In-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-holding-candy-cane-on-christmas",
-    "title": "Hello Kitty Holding Candy Cane On Christmas",
-    "category": "holidays",
-    "source": "Hello-Kitty-Holding-Candy-Cane-On-Christmas-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-holding-i-love-you-heart",
-    "title": "I Love You Heart",
-    "category": "daily-life",
-    "source": "Hello-Kitty-Holding-I-Love-You-Heart-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-hugging-teddy-bear",
-    "title": "Hello Kitty Hugging Teddy Bear",
-    "category": "daily-life",
-    "source": "Hello-Kitty-Hugging-Teddy-Bear-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-ice-skating-in-winter",
-    "title": "Hello Kitty Ice Skating In Winter",
-    "category": "daily-life",
-    "source": "Hello-Kitty-Ice-Skating-In-Winter-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-kissing-dear-daniel-on-the-cheek",
-    "title": "Kissing Dear Daniel",
-    "category": "friends",
-    "source": "Hello-Kitty-Kissing-Dear-Daniel-On-The-Cheek-791x1024.jpg"
-  },
-  {
-    "id": "mandala-fun",
-    "title": "Mandala Fun",
-    "category": "daily-life",
-    "source": "Hello-Kitty-Mandala-Coloring-In-For-Kids-791x1024.jpg"
-  },
-  {
-    "id": "playground-fun",
-    "title": "Playground Fun",
-    "category": "friends",
-    "source": "Hello-Kitty-Playing-In-The-Pool-With-Friends-791x1024.jpg",
-    "popular": true,
-    "bottomTrim": 140,
-    "rightStripWidth": 118
-  },
-  {
-    "id": "hello-kitty-playing-on-the-beach-with-dear-daniel",
-    "title": "Beach With Daniel",
-    "category": "friends",
-    "source": "Hello-Kitty-Playing-On-The-Beach-With-Dear-Daniel-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-riding-bike-on-the-beach",
-    "title": "Hello Kitty Riding Bike On The Beach",
-    "category": "daily-life",
-    "source": "Hello-Kitty-Riding-Bike-On-The-Beach-Coloring-In-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-riding-unicorn",
-    "title": "Hello Kitty Riding Unicorn",
-    "category": "daily-life",
-    "source": "Hello-Kitty-Riding-Unicorn-791x1024.jpg",
-    "popular": true
-  },
-  {
-    "id": "hello-kitty-using-parasol",
-    "title": "Hello Kitty Using Parasol",
-    "category": "daily-life",
-    "source": "Hello-Kitty-Using-Parasol-Coloring-In-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-waving",
-    "title": "Hello Kitty Waving",
-    "category": "daily-life",
-    "source": "Hello-Kitty-Waving-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-winking",
-    "title": "Hello Kitty Winking",
-    "category": "daily-life",
-    "source": "Hello-Kitty-Winking-Coloring-Sheet-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-with-flower-on-her-head",
-    "title": "Hello Kitty With Flower On Her Head",
-    "category": "daily-life",
-    "source": "Hello-Kitty-With-Flower-On-Her-Head-791x1024.jpg"
-  },
-  {
-    "id": "best-friends",
-    "title": "Best Friends",
-    "category": "friends",
-    "source": "Hello-Kitty-With-Pompompurin-And-Cinnamoroll-791x1024.jpg",
-    "popular": true,
-    "bottomTrim": 120
-  },
-  {
-    "id": "hello-holiday",
-    "title": "Holiday Bow",
-    "category": "holidays",
-    "source": "Hello-Kitty-With-Present-And-Christmas-Tree-Coloring-In-791x1024.jpg",
-    "popular": true,
-    "bottomTrim": 100
-  },
-  {
-    "id": "jack-o-lantern-hello-kitty",
-    "title": "Jack-O-Lantern",
-    "category": "holidays",
-    "source": "Jack-O-Lantern-Hello-Kitty-To-Color-791x1024.jpg"
-  },
-  {
-    "id": "kawaii-hello-kitty-sanrio",
-    "title": "Kawaii Hello Kitty Sanrio",
-    "category": "daily-life",
-    "source": "Kawaii-Coloring-Sheet-Of-Hello-Kitty-Sanrio-791x1024.jpg"
-  },
-  {
-    "id": "kawaii-face",
-    "title": "Kawaii Face",
-    "category": "daily-life",
-    "source": "Kawaii-Outline-Of-Hello-Kitty_s-Face-791x1024.jpg"
-  },
-  {
-    "id": "kawaii-unicorn-hello-kitty",
-    "title": "Kawaii Unicorn Hello Kitty",
-    "category": "daily-life",
-    "source": "Kawaii-Unicorn-Hello-Kitty-Coloring-In-For-Kids-791x1024.jpg"
-  },
-  {
-    "id": "mummy-hello-kitty",
-    "title": "Mummy Hello Kitty",
-    "category": "holidays",
-    "source": "Mummy-Hello-Kitty-Coloring-In-For-Kids-791x1024.jpg"
-  },
-  {
-    "id": "holding-flowers",
-    "title": "Holding Flowers",
-    "category": "daily-life",
-    "source": "Outline-Of-Hello-Kitty-Holding-Flowers-791x1024.jpg"
-  },
-  {
-    "id": "princess-kitty",
-    "title": "Princess Kitty",
-    "category": "daily-life",
-    "source": "Princess-Hello-Kitty-Coloring-In-For-Kids-791x1024.jpg",
-    "popular": true
-  },
-  {
-    "id": "garden-party",
+    "id": "garden-kitty",
     "title": "Garden Party",
     "category": "daily-life",
-    "source": "Princess-Hello-Kitty-In-Flower-Field-791x1024.jpg",
     "popular": true,
-    "bottomTrim": 120
+    "sourceFile": "garden-kitty.png",
+    "aiGenerated": true
   },
   {
-    "id": "simple-hello-kitty-mandala",
-    "title": "Simple Hello Kitty Mandala",
-    "category": "daily-life",
-    "source": "Simple-Hello-Kitty-Mandala-Coloring-Page-791x1024.jpg"
-  },
-  {
-    "id": "simple-hello-kitty-with-hearts",
-    "title": "Simple Hello Kitty With Hearts",
-    "category": "daily-life",
-    "source": "Simple-Hello-Kitty-With-Hearts-Outline-791x1024.jpg"
-  },
-  {
-    "id": "the-adventures-of-hello-kitty-and-friends-poster",
-    "title": "Adventures Poster",
+    "id": "best-friends-kitty",
+    "title": "Best Friends",
     "category": "friends",
-    "source": "The-Adventures-of-Hello-Kitty-_-Friends-Poster-To-Color-791x1024.jpg"
+    "popular": true,
+    "sourceFile": "best-friends-kitty.png",
+    "aiGenerated": true
   },
   {
-    "id": "valentine-s-day-hello-kitty",
-    "title": "Valentine's Day",
+    "id": "spring-picnic-kitty",
+    "title": "Spring Picnic",
+    "category": "daily-life",
+    "sourceFile": "spring-picnic-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "holiday-kitty",
+    "title": "Holiday Bow",
     "category": "holidays",
-    "source": "Valentine_s-Day-Hello-Kitty-Coloring-Sheet-791x1024.jpg"
+    "popular": true,
+    "sourceFile": "holiday-kitty.png",
+    "aiGenerated": true
   },
   {
-    "id": "tea-time",
+    "id": "tea-time-kitty",
     "title": "Tea Time",
     "category": "daily-life",
-    "source": "Waitress-Hello-Kitty-Serving-Cake-Coloring-Sheet-791x1024.jpg",
     "popular": true,
-    "bottomTrim": 108
+    "sourceFile": "tea-time-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "playground-kitty",
+    "title": "Playground Fun",
+    "category": "friends",
+    "sourceFile": "playground-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "starlight-kitty",
+    "title": "Starlight Dream",
+    "category": "daily-life",
+    "popular": true,
+    "sourceFile": "starlight-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "boba-kitty",
+    "title": "Boba Kitty",
+    "category": "daily-life",
+    "popular": true,
+    "sourceFile": "boba-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "butterfly-kitty",
+    "title": "Butterfly Meadow",
+    "category": "daily-life",
+    "sourceFile": "butterfly-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "unicorn-kitty",
+    "title": "Unicorn Ride",
+    "category": "daily-life",
+    "popular": true,
+    "sourceFile": "unicorn-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "beach-kitty",
+    "title": "Beach Day",
+    "category": "daily-life",
+    "sourceFile": "beach-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "rainy-kitty",
+    "title": "Rainy Day",
+    "category": "daily-life",
+    "sourceFile": "rainy-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "reading-kitty",
+    "title": "Story Time",
+    "category": "daily-life",
+    "sourceFile": "reading-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "baking-kitty",
+    "title": "Baking Cookies",
+    "category": "daily-life",
+    "sourceFile": "baking-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "halloween-kitty",
+    "title": "Halloween Kitty",
+    "category": "holidays",
+    "sourceFile": "halloween-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "valentine-kitty",
+    "title": "Valentine Hearts",
+    "category": "holidays",
+    "sourceFile": "valentine-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "snow-kitty",
+    "title": "Snow Day",
+    "category": "holidays",
+    "sourceFile": "snow-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "space-kitty",
+    "title": "Space Explorer",
+    "category": "daily-life",
+    "sourceFile": "space-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "music-kitty",
+    "title": "Music Time",
+    "category": "daily-life",
+    "sourceFile": "music-kitty.png",
+    "aiGenerated": true
   }
 ]

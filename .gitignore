@@ -23,6 +23,7 @@
 # misc
 .DS_Store
 /_reference
+/_ai-source
 *.pem
 
 # debug

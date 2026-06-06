@@ -1,546 +1,142 @@
 [
   {
-    "id": "boba-hello-kitty",
-    "lineArtSrc": "/assets/coloring-pages/boba-hello-kitty/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Boba-Hello-Kitty-Coloring-Page-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Boba-Hello-Kitty-Coloring-Page-791x1024.jpg"
-  },
-  {
-    "id": "butterfly-hello-kitty-hugging-mushroom",
-    "lineArtSrc": "/assets/coloring-pages/butterfly-hello-kitty-hugging-mushroom/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Butterfly-Hello-Kitty-Hugging-Mushroom-To-Color-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Butterfly-Hello-Kitty-Hugging-Mushroom-To-Color-791x1024.jpg"
-  },
-  {
-    "id": "christmas-themed-hello-kitty",
-    "lineArtSrc": "/assets/coloring-pages/christmas-themed-hello-kitty/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Christmas-Themed-Hello-Kitty-Coloring-Sheet-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Christmas-Themed-Hello-Kitty-Coloring-Sheet-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-with-butterfly-wings",
-    "lineArtSrc": "/assets/coloring-pages/hello-kitty-with-butterfly-wings/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Coloring-Page-Of-Hello-Kitty-With-Butterfly-Wings-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Coloring-Page-Of-Hello-Kitty-With-Butterfly-Wings-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-and-mimmy-in-the-pool",
-    "lineArtSrc": "/assets/coloring-pages/hello-kitty-and-mimmy-in-the-pool/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Coloring-Sheet-Of-Hello-Kitty-And-Mimmy-In-The-Pool-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Coloring-Sheet-Of-Hello-Kitty-And-Mimmy-In-The-Pool-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-holding-heart-balloons",
-    "lineArtSrc": "/assets/coloring-pages/hello-kitty-holding-heart-balloons/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Coloring-Sheet-Of-Hello-Kitty-Holding-Heart-Balloons-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Coloring-Sheet-Of-Hello-Kitty-Holding-Heart-Balloons-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-holding-strawberry",
-    "lineArtSrc": "/assets/coloring-pages/hello-kitty-holding-strawberry/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Coloring-Sheet-Of-Hello-Kitty-Holding-Strawberry-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Coloring-Sheet-Of-Hello-Kitty-Holding-Strawberry-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-sanrio-in-a-field",
-    "lineArtSrc": "/assets/coloring-pages/hello-kitty-sanrio-in-a-field/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Coloring-Sheet-Of-Hello-Kitty-Sanrio-In-A-Field-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Coloring-Sheet-Of-Hello-Kitty-Sanrio-In-A-Field-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-with-valentine-s-day-card",
-    "lineArtSrc": "/assets/coloring-pages/hello-kitty-with-valentine-s-day-card/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Coloring-Sheet-Of-Hello-Kitty-With-Valentine_s-Day-Card-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Coloring-Sheet-Of-Hello-Kitty-With-Valentine_s-Day-Card-791x1024.jpg"
-  },
-  {
-    "id": "starlight-dream",
-    "lineArtSrc": "/assets/coloring-pages/starlight-dream/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Coloring-Sheet-Of-Winter-Hello-Kitty-Fairy-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Coloring-Sheet-Of-Winter-Hello-Kitty-Fairy-791x1024.jpg"
-  },
-  {
-    "id": "cute-hello-kitty-holding-heart",
-    "lineArtSrc": "/assets/coloring-pages/cute-hello-kitty-holding-heart/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Cute-Coloring-Page-Of-Hello-Kitty-Holding-Heart-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Cute-Coloring-Page-Of-Hello-Kitty-Holding-Heart-791x1024.jpg"
-  },
-  {
-    "id": "cute-hello-kitty-wearing-bunny-ears",
-    "lineArtSrc": "/assets/coloring-pages/cute-hello-kitty-wearing-bunny-ears/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Cute-Hello-Kitty-Wearing-Bunny-Ears-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Cute-Hello-Kitty-Wearing-Bunny-Ears-791x1024.jpg"
-  },
-  {
-    "id": "cute-hello-kitty-wearing-polka-dots",
-    "lineArtSrc": "/assets/coloring-pages/cute-hello-kitty-wearing-polka-dots/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Cute-Hello-Kitty-Wearing-Polka-Dots-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Cute-Hello-Kitty-Wearing-Polka-Dots-791x1024.jpg"
-  },
-  {
-    "id": "cute-kawaii-fairy-hello-kitty",
-    "lineArtSrc": "/assets/coloring-pages/cute-kawaii-fairy-hello-kitty/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Cute-Kawaii-Fairy-Hello-Kitty-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Cute-Kawaii-Fairy-Hello-Kitty-791x1024.jpg"
-  },
-  {
-    "id": "cute-unicorn-hello-kitty",
-    "lineArtSrc": "/assets/coloring-pages/cute-unicorn-hello-kitty/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Cute-Unicorn-Hello-Kitty-For-Preschoolers-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Cute-Unicorn-Hello-Kitty-For-Preschoolers-791x1024.jpg"
-  },
-  {
-    "id": "easy-hello-kitty-mandala",
-    "lineArtSrc": "/assets/coloring-pages/easy-hello-kitty-mandala/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Easy-Hello-Kitty-Mandala-To-Color-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Easy-Hello-Kitty-Mandala-To-Color-791x1024.jpg"
-  },
-  {
-    "id": "easy-hello-kitty-with-crown-and-sash",
-    "lineArtSrc": "/assets/coloring-pages/easy-hello-kitty-with-crown-and-sash/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Easy-Hello-Kitty-With-Crown-And-Sash-For-Preschoolers-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Easy-Hello-Kitty-With-Crown-And-Sash-For-Preschoolers-791x1024.jpg"
-  },
-  {
-    "id": "emo-hello-kitty",
-    "lineArtSrc": "/assets/coloring-pages/emo-hello-kitty/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Emo-Hello-Kitty-Outline-For-Kids-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Emo-Hello-Kitty-Outline-For-Kids-791x1024.jpg"
-  },
-  {
-    "id": "frankenstein-hello-kitty",
-    "lineArtSrc": "/assets/coloring-pages/frankenstein-hello-kitty/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Frankenstein-Hello-Kitty-Coloring-In-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Frankenstein-Hello-Kitty-Coloring-In-791x1024.jpg"
-  },
-  {
-    "id": "goth-hello-kitty",
-    "lineArtSrc": "/assets/coloring-pages/goth-hello-kitty/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Goth-Hello-Kitty-Coloring-Page-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Goth-Hello-Kitty-Coloring-Page-791x1024.jpg"
-  },
-  {
-    "id": "goth-punk-hello-kitty",
-    "lineArtSrc": "/assets/coloring-pages/goth-punk-hello-kitty/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Goth-Punk-Hello-Kitty-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Goth-Punk-Hello-Kitty-791x1024.jpg"
-  },
-  {
-    "id": "witch-halloween",
-    "lineArtSrc": "/assets/coloring-pages/witch-halloween/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Halloween-Coloring-Page-Of-Witch-Hello-Kitty-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Halloween-Coloring-Page-Of-Witch-Hello-Kitty-791x1024.jpg"
-  },
-  {
     "id": "birthday-kitty",
     "lineArtSrc": "/assets/coloring-pages/birthday-kitty/line-art.jpg",
     "width": 791,
-    "height": 928,
-    "reference": "Happy-Birthday-Hello-Kitty-Coloring-Page-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Happy-Birthday-Hello-Kitty-Coloring-Page-791x1024.jpg"
+    "height": 527,
+    "sourceFile": "birthday-kitty-preview.png"
   },
   {
-    "id": "happy-birthday-hello-kitty-with-cake",
-    "lineArtSrc": "/assets/coloring-pages/happy-birthday-hello-kitty-with-cake/line-art.jpg",
+    "id": "garden-kitty",
+    "lineArtSrc": "/assets/coloring-pages/garden-kitty/line-art.jpg",
     "width": 791,
-    "height": 924,
-    "reference": "Happy-Birthday-Hello-Kitty-With-Cake-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Happy-Birthday-Hello-Kitty-With-Cake-791x1024.jpg"
+    "height": 527,
+    "sourceFile": "garden-kitty.png"
   },
   {
-    "id": "hello-kitty-princess-party-poster",
-    "lineArtSrc": "/assets/coloring-pages/hello-kitty-princess-party-poster/line-art.jpg",
+    "id": "best-friends-kitty",
+    "lineArtSrc": "/assets/coloring-pages/best-friends-kitty/line-art.jpg",
     "width": 791,
-    "height": 924,
-    "reference": "Hello-Kitty_s-Princess-Party-Poster-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Hello-Kitty_s-Princess-Party-Poster-791x1024.jpg"
+    "height": 527,
+    "sourceFile": "best-friends-kitty.png"
   },
   {
-    "id": "hello-kitty-and-friends-poster",
-    "lineArtSrc": "/assets/coloring-pages/hello-kitty-and-friends-poster/line-art.jpg",
+    "id": "spring-picnic-kitty",
+    "lineArtSrc": "/assets/coloring-pages/spring-picnic-kitty/line-art.jpg",
     "width": 791,
-    "height": 924,
-    "reference": "Hello-Kitty-_-Friends-Poster-To-Color-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Hello-Kitty-_-Friends-Poster-To-Color-791x1024.jpg"
+    "height": 527,
+    "sourceFile": "spring-picnic-kitty.png"
   },
   {
-    "id": "hello-kitty-and-sanrio-friends-playing",
-    "lineArtSrc": "/assets/coloring-pages/hello-kitty-and-sanrio-friends-playing/line-art.jpg",
+    "id": "holiday-kitty",
+    "lineArtSrc": "/assets/coloring-pages/holiday-kitty/line-art.jpg",
     "width": 791,
-    "height": 924,
-    "reference": "Hello-Kitty-_-Sanrio-Friends-Playing-To-Color-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Hello-Kitty-_-Sanrio-Friends-Playing-To-Color-791x1024.jpg"
+    "height": 527,
+    "sourceFile": "holiday-kitty.png"
   },
   {
-    "id": "hello-kitty-and-joey-on-the-beach",
-    "lineArtSrc": "/assets/coloring-pages/hello-kitty-and-joey-on-the-beach/line-art.jpg",
+    "id": "tea-time-kitty",
+    "lineArtSrc": "/assets/coloring-pages/tea-time-kitty/line-art.jpg",
     "width": 791,
-    "height": 924,
-    "reference": "Hello-Kitty-And-Joey-On-The-Beach-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Hello-Kitty-And-Joey-On-The-Beach-791x1024.jpg"
+    "height": 527,
+    "sourceFile": "tea-time-kitty.png"
   },
   {
-    "id": "hello-kitty-and-mimmy-making-christmas-snowman",
-    "lineArtSrc": "/assets/coloring-pages/hello-kitty-and-mimmy-making-christmas-snowman/line-art.jpg",
+    "id": "playground-kitty",
+    "lineArtSrc": "/assets/coloring-pages/playground-kitty/line-art.jpg",
     "width": 791,
-    "height": 924,
-    "reference": "Hello-Kitty-And-Mimmy-Making-Christmas-Snowman-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Hello-Kitty-And-Mimmy-Making-Christmas-Snowman-791x1024.jpg"
+    "height": 527,
+    "sourceFile": "playground-kitty.png"
   },
   {
-    "id": "hello-kitty-and-pusheen-on-a-cloud",
-    "lineArtSrc": "/assets/coloring-pages/hello-kitty-and-pusheen-on-a-cloud/line-art.jpg",
+    "id": "starlight-kitty",
+    "lineArtSrc": "/assets/coloring-pages/starlight-kitty/line-art.jpg",
     "width": 791,
-    "height": 924,
-    "reference": "Hello-Kitty-And-Pusheen-On-A-Cloud-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Hello-Kitty-And-Pusheen-On-A-Cloud-791x1024.jpg"
+    "height": 527,
+    "sourceFile": "starlight-kitty.png"
   },
   {
-    "id": "hello-kitty-and-pusheen-selfie",
-    "lineArtSrc": "/assets/coloring-pages/hello-kitty-and-pusheen-selfie/line-art.jpg",
+    "id": "boba-kitty",
+    "lineArtSrc": "/assets/coloring-pages/boba-kitty/line-art.jpg",
     "width": 791,
-    "height": 924,
-    "reference": "Hello-Kitty-And-Pusheen-Selfie-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Hello-Kitty-And-Pusheen-Selfie-791x1024.jpg"
+    "height": 527,
+    "sourceFile": "boba-kitty.png"
   },
   {
-    "id": "hello-kitty-carrying-birthday-cake",
-    "lineArtSrc": "/assets/coloring-pages/hello-kitty-carrying-birthday-cake/line-art.jpg",
+    "id": "butterfly-kitty",
+    "lineArtSrc": "/assets/coloring-pages/butterfly-kitty/line-art.jpg",
     "width": 791,
-    "height": 924,
-    "reference": "Hello-Kitty-Carrying-Birthday-Cake-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Hello-Kitty-Carrying-Birthday-Cake-791x1024.jpg"
+    "height": 527,
+    "sourceFile": "butterfly-kitty.png"
   },
   {
-    "id": "hello-kitty-collecting-easter-eggs",
-    "lineArtSrc": "/assets/coloring-pages/hello-kitty-collecting-easter-eggs/line-art.jpg",
+    "id": "unicorn-kitty",
+    "lineArtSrc": "/assets/coloring-pages/unicorn-kitty/line-art.jpg",
     "width": 791,
-    "height": 924,
-    "reference": "Hello-Kitty-Collecting-Easter-Eggs-Coloring-Sheet-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Hello-Kitty-Collecting-Easter-Eggs-Coloring-Sheet-791x1024.jpg"
+    "height": 527,
+    "sourceFile": "unicorn-kitty.png"
   },
   {
-    "id": "hello-kitty-dancing-hula",
-    "lineArtSrc": "/assets/coloring-pages/hello-kitty-dancing-hula/line-art.jpg",
+    "id": "beach-kitty",
+    "lineArtSrc": "/assets/coloring-pages/beach-kitty/line-art.jpg",
     "width": 791,
-    "height": 924,
-    "reference": "Hello-Kitty-Dancing-Hula-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Hello-Kitty-Dancing-Hula-791x1024.jpg"
+    "height": 527,
+    "sourceFile": "beach-kitty.png"
   },
   {
-    "id": "hello-kitty-eating-apple",
-    "lineArtSrc": "/assets/coloring-pages/hello-kitty-eating-apple/line-art.jpg",
+    "id": "rainy-kitty",
+    "lineArtSrc": "/assets/coloring-pages/rainy-kitty/line-art.jpg",
     "width": 791,
-    "height": 924,
-    "reference": "Hello-Kitty-Eating-Apple-To-Color-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Hello-Kitty-Eating-Apple-To-Color-791x1024.jpg"
+    "height": 527,
+    "sourceFile": "rainy-kitty.png"
   },
   {
-    "id": "spring-picnic",
-    "lineArtSrc": "/assets/coloring-pages/spring-picnic/line-art.jpg",
+    "id": "reading-kitty",
+    "lineArtSrc": "/assets/coloring-pages/reading-kitty/line-art.jpg",
     "width": 791,
-    "height": 912,
-    "reference": "Hello-Kitty-Enjoying-Picnic-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Hello-Kitty-Enjoying-Picnic-791x1024.jpg"
+    "height": 527,
+    "sourceFile": "reading-kitty.png"
   },
   {
-    "id": "hello-kitty-flying-kiss",
-    "lineArtSrc": "/assets/coloring-pages/hello-kitty-flying-kiss/line-art.jpg",
+    "id": "baking-kitty",
+    "lineArtSrc": "/assets/coloring-pages/baking-kitty/line-art.jpg",
     "width": 791,
-    "height": 924,
-    "reference": "Hello-Kitty-Flying-Kiss-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Hello-Kitty-Flying-Kiss-791x1024.jpg"
+    "height": 527,
+    "sourceFile": "baking-kitty.png"
   },
   {
-    "id": "hello-kitty-halloween",
-    "lineArtSrc": "/assets/coloring-pages/hello-kitty-halloween/line-art.jpg",
+    "id": "halloween-kitty",
+    "lineArtSrc": "/assets/coloring-pages/halloween-kitty/line-art.jpg",
     "width": 791,
-    "height": 924,
-    "reference": "Hello-Kitty-Halloween-Coloring-Sheet-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Hello-Kitty-Halloween-Coloring-Sheet-791x1024.jpg"
+    "height": 527,
+    "sourceFile": "halloween-kitty.png"
   },
   {
-    "id": "hello-kitty-happy-birthday-greeting",
-    "lineArtSrc": "/assets/coloring-pages/hello-kitty-happy-birthday-greeting/line-art.jpg",
+    "id": "valentine-kitty",
+    "lineArtSrc": "/assets/coloring-pages/valentine-kitty/line-art.jpg",
     "width": 791,
-    "height": 924,
-    "reference": "Hello-Kitty-Happy-Birthday-Greeting-Coloring-In-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Hello-Kitty-Happy-Birthday-Greeting-Coloring-In-791x1024.jpg"
+    "height": 527,
+    "sourceFile": "valentine-kitty.png"
   },
   {
-    "id": "hello-kitty-holding-candy-cane-on-christmas",
-    "lineArtSrc": "/assets/coloring-pages/hello-kitty-holding-candy-cane-on-christmas/line-art.jpg",
+    "id": "snow-kitty",
+    "lineArtSrc": "/assets/coloring-pages/snow-kitty/line-art.jpg",
     "width": 791,
-    "height": 924,
-    "reference": "Hello-Kitty-Holding-Candy-Cane-On-Christmas-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Hello-Kitty-Holding-Candy-Cane-On-Christmas-791x1024.jpg"
+    "height": 527,
+    "sourceFile": "snow-kitty.png"
   },
   {
-    "id": "hello-kitty-holding-i-love-you-heart",
-    "lineArtSrc": "/assets/coloring-pages/hello-kitty-holding-i-love-you-heart/line-art.jpg",
+    "id": "space-kitty",
+    "lineArtSrc": "/assets/coloring-pages/space-kitty/line-art.jpg",
     "width": 791,
-    "height": 924,
-    "reference": "Hello-Kitty-Holding-I-Love-You-Heart-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Hello-Kitty-Holding-I-Love-You-Heart-791x1024.jpg"
+    "height": 527,
+    "sourceFile": "space-kitty.png"
   },
   {
-    "id": "hello-kitty-hugging-teddy-bear",
-    "lineArtSrc": "/assets/coloring-pages/hello-kitty-hugging-teddy-bear/line-art.jpg",
+    "id": "music-kitty",
+    "lineArtSrc": "/assets/coloring-pages/music-kitty/line-art.jpg",
     "width": 791,
-    "height": 924,
-    "reference": "Hello-Kitty-Hugging-Teddy-Bear-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Hello-Kitty-Hugging-Teddy-Bear-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-ice-skating-in-winter",
-    "lineArtSrc": "/assets/coloring-pages/hello-kitty-ice-skating-in-winter/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Hello-Kitty-Ice-Skating-In-Winter-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Hello-Kitty-Ice-Skating-In-Winter-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-kissing-dear-daniel-on-the-cheek",
-    "lineArtSrc": "/assets/coloring-pages/hello-kitty-kissing-dear-daniel-on-the-cheek/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Hello-Kitty-Kissing-Dear-Daniel-On-The-Cheek-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Hello-Kitty-Kissing-Dear-Daniel-On-The-Cheek-791x1024.jpg"
-  },
-  {
-    "id": "mandala-fun",
-    "lineArtSrc": "/assets/coloring-pages/mandala-fun/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Hello-Kitty-Mandala-Coloring-In-For-Kids-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Hello-Kitty-Mandala-Coloring-In-For-Kids-791x1024.jpg"
-  },
-  {
-    "id": "playground-fun",
-    "lineArtSrc": "/assets/coloring-pages/playground-fun/line-art.jpg",
-    "width": 791,
-    "height": 884,
-    "reference": "Hello-Kitty-Playing-In-The-Pool-With-Friends-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Hello-Kitty-Playing-In-The-Pool-With-Friends-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-playing-on-the-beach-with-dear-daniel",
-    "lineArtSrc": "/assets/coloring-pages/hello-kitty-playing-on-the-beach-with-dear-daniel/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Hello-Kitty-Playing-On-The-Beach-With-Dear-Daniel-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Hello-Kitty-Playing-On-The-Beach-With-Dear-Daniel-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-riding-bike-on-the-beach",
-    "lineArtSrc": "/assets/coloring-pages/hello-kitty-riding-bike-on-the-beach/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Hello-Kitty-Riding-Bike-On-The-Beach-Coloring-In-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Hello-Kitty-Riding-Bike-On-The-Beach-Coloring-In-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-riding-unicorn",
-    "lineArtSrc": "/assets/coloring-pages/hello-kitty-riding-unicorn/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Hello-Kitty-Riding-Unicorn-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Hello-Kitty-Riding-Unicorn-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-using-parasol",
-    "lineArtSrc": "/assets/coloring-pages/hello-kitty-using-parasol/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Hello-Kitty-Using-Parasol-Coloring-In-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Hello-Kitty-Using-Parasol-Coloring-In-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-waving",
-    "lineArtSrc": "/assets/coloring-pages/hello-kitty-waving/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Hello-Kitty-Waving-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Hello-Kitty-Waving-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-winking",
-    "lineArtSrc": "/assets/coloring-pages/hello-kitty-winking/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Hello-Kitty-Winking-Coloring-Sheet-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Hello-Kitty-Winking-Coloring-Sheet-791x1024.jpg"
-  },
-  {
-    "id": "hello-kitty-with-flower-on-her-head",
-    "lineArtSrc": "/assets/coloring-pages/hello-kitty-with-flower-on-her-head/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Hello-Kitty-With-Flower-On-Her-Head-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Hello-Kitty-With-Flower-On-Her-Head-791x1024.jpg"
-  },
-  {
-    "id": "best-friends",
-    "lineArtSrc": "/assets/coloring-pages/best-friends/line-art.jpg",
-    "width": 791,
-    "height": 904,
-    "reference": "Hello-Kitty-With-Pompompurin-And-Cinnamoroll-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Hello-Kitty-With-Pompompurin-And-Cinnamoroll-791x1024.jpg"
-  },
-  {
-    "id": "hello-holiday",
-    "lineArtSrc": "/assets/coloring-pages/hello-holiday/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Hello-Kitty-With-Present-And-Christmas-Tree-Coloring-In-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Hello-Kitty-With-Present-And-Christmas-Tree-Coloring-In-791x1024.jpg"
-  },
-  {
-    "id": "jack-o-lantern-hello-kitty",
-    "lineArtSrc": "/assets/coloring-pages/jack-o-lantern-hello-kitty/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Jack-O-Lantern-Hello-Kitty-To-Color-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Jack-O-Lantern-Hello-Kitty-To-Color-791x1024.jpg"
-  },
-  {
-    "id": "kawaii-hello-kitty-sanrio",
-    "lineArtSrc": "/assets/coloring-pages/kawaii-hello-kitty-sanrio/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Kawaii-Coloring-Sheet-Of-Hello-Kitty-Sanrio-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Kawaii-Coloring-Sheet-Of-Hello-Kitty-Sanrio-791x1024.jpg"
-  },
-  {
-    "id": "kawaii-face",
-    "lineArtSrc": "/assets/coloring-pages/kawaii-face/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Kawaii-Outline-Of-Hello-Kitty_s-Face-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Kawaii-Outline-Of-Hello-Kitty_s-Face-791x1024.jpg"
-  },
-  {
-    "id": "kawaii-unicorn-hello-kitty",
-    "lineArtSrc": "/assets/coloring-pages/kawaii-unicorn-hello-kitty/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Kawaii-Unicorn-Hello-Kitty-Coloring-In-For-Kids-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Kawaii-Unicorn-Hello-Kitty-Coloring-In-For-Kids-791x1024.jpg"
-  },
-  {
-    "id": "mummy-hello-kitty",
-    "lineArtSrc": "/assets/coloring-pages/mummy-hello-kitty/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Mummy-Hello-Kitty-Coloring-In-For-Kids-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Mummy-Hello-Kitty-Coloring-In-For-Kids-791x1024.jpg"
-  },
-  {
-    "id": "holding-flowers",
-    "lineArtSrc": "/assets/coloring-pages/holding-flowers/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Outline-Of-Hello-Kitty-Holding-Flowers-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Outline-Of-Hello-Kitty-Holding-Flowers-791x1024.jpg"
-  },
-  {
-    "id": "princess-kitty",
-    "lineArtSrc": "/assets/coloring-pages/princess-kitty/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Princess-Hello-Kitty-Coloring-In-For-Kids-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Princess-Hello-Kitty-Coloring-In-For-Kids-791x1024.jpg"
-  },
-  {
-    "id": "garden-party",
-    "lineArtSrc": "/assets/coloring-pages/garden-party/line-art.jpg",
-    "width": 791,
-    "height": 904,
-    "reference": "Princess-Hello-Kitty-In-Flower-Field-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Princess-Hello-Kitty-In-Flower-Field-791x1024.jpg"
-  },
-  {
-    "id": "simple-hello-kitty-mandala",
-    "lineArtSrc": "/assets/coloring-pages/simple-hello-kitty-mandala/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Simple-Hello-Kitty-Mandala-Coloring-Page-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Simple-Hello-Kitty-Mandala-Coloring-Page-791x1024.jpg"
-  },
-  {
-    "id": "simple-hello-kitty-with-hearts",
-    "lineArtSrc": "/assets/coloring-pages/simple-hello-kitty-with-hearts/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Simple-Hello-Kitty-With-Hearts-Outline-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Simple-Hello-Kitty-With-Hearts-Outline-791x1024.jpg"
-  },
-  {
-    "id": "the-adventures-of-hello-kitty-and-friends-poster",
-    "lineArtSrc": "/assets/coloring-pages/the-adventures-of-hello-kitty-and-friends-poster/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "The-Adventures-of-Hello-Kitty-_-Friends-Poster-To-Color-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/The-Adventures-of-Hello-Kitty-_-Friends-Poster-To-Color-791x1024.jpg"
-  },
-  {
-    "id": "valentine-s-day-hello-kitty",
-    "lineArtSrc": "/assets/coloring-pages/valentine-s-day-hello-kitty/line-art.jpg",
-    "width": 791,
-    "height": 924,
-    "reference": "Valentine_s-Day-Hello-Kitty-Coloring-Sheet-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Valentine_s-Day-Hello-Kitty-Coloring-Sheet-791x1024.jpg"
-  },
-  {
-    "id": "tea-time",
-    "lineArtSrc": "/assets/coloring-pages/tea-time/line-art.jpg",
-    "width": 791,
-    "height": 916,
-    "reference": "Waitress-Hello-Kitty-Serving-Cake-Coloring-Sheet-791x1024.jpg",
-    "source": "https://mondaymandala.com/wp-content/uploads/Waitress-Hello-Kitty-Serving-Cake-Coloring-Sheet-791x1024.jpg"
+    "height": 527,
+    "sourceFile": "music-kitty.png"
   }
 ]
