@@ -146,5 +146,111 @@
     "category": "daily-life",
     "sourceFile": "music-kitty.png",
     "aiGenerated": true
+  },
+  {
+    "id": "easter-kitty",
+    "title": "Easter Eggs",
+    "category": "holidays",
+    "sourceFile": "easter-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "pool-kitty",
+    "title": "Pool Party",
+    "category": "friends",
+    "sourceFile": "pool-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "camping-kitty",
+    "title": "Camping Trip",
+    "category": "daily-life",
+    "sourceFile": "camping-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "fishing-kitty",
+    "title": "Gone Fishing",
+    "category": "daily-life",
+    "sourceFile": "fishing-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "skating-kitty",
+    "title": "Ice Skating",
+    "category": "holidays",
+    "sourceFile": "skating-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "soccer-kitty",
+    "title": "Soccer Star",
+    "category": "friends",
+    "sourceFile": "soccer-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "painter-kitty",
+    "title": "Little Artist",
+    "category": "daily-life",
+    "sourceFile": "painter-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "kite-kitty",
+    "title": "Fly a Kite",
+    "category": "daily-life",
+    "sourceFile": "kite-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "bicycle-kitty",
+    "title": "Bike Ride",
+    "category": "daily-life",
+    "sourceFile": "bicycle-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "daniel-kitty",
+    "title": "Dear Daniel",
+    "category": "friends",
+    "popular": true,
+    "sourceFile": "daniel-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "gift-kitty",
+    "title": "Holiday Gift",
+    "category": "holidays",
+    "sourceFile": "gift-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "candy-kitty",
+    "title": "Candy Shop",
+    "category": "daily-life",
+    "sourceFile": "candy-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "rainbow-kitty",
+    "title": "Rainbow Day",
+    "category": "daily-life",
+    "sourceFile": "rainbow-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "pirate-kitty",
+    "title": "Pirate Adventure",
+    "category": "daily-life",
+    "sourceFile": "pirate-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "sleepy-kitty",
+    "title": "Bedtime",
+    "category": "daily-life",
+    "sourceFile": "sleepy-kitty.png",
+    "aiGenerated": true
   }
 ]

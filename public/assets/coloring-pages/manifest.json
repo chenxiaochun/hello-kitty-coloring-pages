@@ -138,5 +138,110 @@
     "width": 791,
     "height": 527,
     "sourceFile": "music-kitty.png"
+  },
+  {
+    "id": "easter-kitty",
+    "lineArtSrc": "/assets/coloring-pages/easter-kitty/line-art.jpg",
+    "width": 791,
+    "height": 527,
+    "sourceFile": "easter-kitty.png"
+  },
+  {
+    "id": "pool-kitty",
+    "lineArtSrc": "/assets/coloring-pages/pool-kitty/line-art.jpg",
+    "width": 791,
+    "height": 527,
+    "sourceFile": "pool-kitty.png"
+  },
+  {
+    "id": "camping-kitty",
+    "lineArtSrc": "/assets/coloring-pages/camping-kitty/line-art.jpg",
+    "width": 791,
+    "height": 527,
+    "sourceFile": "camping-kitty.png"
+  },
+  {
+    "id": "fishing-kitty",
+    "lineArtSrc": "/assets/coloring-pages/fishing-kitty/line-art.jpg",
+    "width": 791,
+    "height": 527,
+    "sourceFile": "fishing-kitty.png"
+  },
+  {
+    "id": "skating-kitty",
+    "lineArtSrc": "/assets/coloring-pages/skating-kitty/line-art.jpg",
+    "width": 791,
+    "height": 527,
+    "sourceFile": "skating-kitty.png"
+  },
+  {
+    "id": "soccer-kitty",
+    "lineArtSrc": "/assets/coloring-pages/soccer-kitty/line-art.jpg",
+    "width": 791,
+    "height": 527,
+    "sourceFile": "soccer-kitty.png"
+  },
+  {
+    "id": "painter-kitty",
+    "lineArtSrc": "/assets/coloring-pages/painter-kitty/line-art.jpg",
+    "width": 791,
+    "height": 527,
+    "sourceFile": "painter-kitty.png"
+  },
+  {
+    "id": "kite-kitty",
+    "lineArtSrc": "/assets/coloring-pages/kite-kitty/line-art.jpg",
+    "width": 791,
+    "height": 527,
+    "sourceFile": "kite-kitty.png"
+  },
+  {
+    "id": "bicycle-kitty",
+    "lineArtSrc": "/assets/coloring-pages/bicycle-kitty/line-art.jpg",
+    "width": 791,
+    "height": 527,
+    "sourceFile": "bicycle-kitty.png"
+  },
+  {
+    "id": "daniel-kitty",
+    "lineArtSrc": "/assets/coloring-pages/daniel-kitty/line-art.jpg",
+    "width": 791,
+    "height": 527,
+    "sourceFile": "daniel-kitty.png"
+  },
+  {
+    "id": "gift-kitty",
+    "lineArtSrc": "/assets/coloring-pages/gift-kitty/line-art.jpg",
+    "width": 791,
+    "height": 527,
+    "sourceFile": "gift-kitty.png"
+  },
+  {
+    "id": "candy-kitty",
+    "lineArtSrc": "/assets/coloring-pages/candy-kitty/line-art.jpg",
+    "width": 791,
+    "height": 527,
+    "sourceFile": "candy-kitty.png"
+  },
+  {
+    "id": "rainbow-kitty",
+    "lineArtSrc": "/assets/coloring-pages/rainbow-kitty/line-art.jpg",
+    "width": 791,
+    "height": 527,
+    "sourceFile": "rainbow-kitty.png"
+  },
+  {
+    "id": "pirate-kitty",
+    "lineArtSrc": "/assets/coloring-pages/pirate-kitty/line-art.jpg",
+    "width": 791,
+    "height": 527,
+    "sourceFile": "pirate-kitty.png"
+  },
+  {
+    "id": "sleepy-kitty",
+    "lineArtSrc": "/assets/coloring-pages/sleepy-kitty/line-art.jpg",
+    "width": 791,
+    "height": 527,
+    "sourceFile": "sleepy-kitty.png"
   }
 ]
