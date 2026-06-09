@@ -11,6 +11,11 @@ import {
   type ColoringMode,
   type ToolMode,
 } from "@/components/color/ColorToolbar";
+import { CelebrationOverlay } from "@/components/color/CelebrationOverlay";
+import {
+  compressForGallery,
+  saveArtwork,
+} from "@/lib/art/saved-artwork";
 import {
   compositeArtwork,
   downloadDataUrl,
@@ -46,6 +51,7 @@ export function ColorCanvas({ page }: ColorCanvasProps) {
   const [fillPulse, setFillPulse] = useState(false);
   const [lineArtReady, setLineArtReady] = useState(false);
   const [artSize, setArtSize] = useState<LineArtDimensions>(DEFAULT_LINE_ART_SIZE);
+  const [showCelebration, setShowCelebration] = useState(false);
 
   const saveSnapshot = useCallback(() => {
     const canvas = canvasRef.current;
@@ -251,6 +257,14 @@ export function ColorCanvas({ page }: ColorCanvasProps) {
     try {
       const dataUrl = await exportArtwork();
       downloadDataUrl(dataUrl, `${page.id}-colored.png`);
+
+      const galleryImage = await compressForGallery(dataUrl);
+      saveArtwork({
+        pageId: page.id,
+        pageTitle: page.title,
+        imageDataUrl: galleryImage,
+      });
+      setShowCelebration(true);
     } finally {
       setIsExporting(false);
     }
@@ -271,6 +285,10 @@ export function ColorCanvas({ page }: ColorCanvasProps) {
 
   return (
     <div className="flex min-h-screen flex-col bg-[var(--cream-white)]">
+      <CelebrationOverlay
+        show={showCelebration}
+        onDone={() => setShowCelebration(false)}
+      />
       <header className="flex items-center justify-between gap-3 border-b-2 border-[var(--soft-pink)] bg-white px-4 py-3">
         <Link
           href="/gallery"

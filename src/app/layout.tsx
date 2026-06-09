@@ -14,10 +14,29 @@ const nunito = Nunito({
   weight: ["500", "600", "700"],
 });
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : undefined);
+
 export const metadata: Metadata = {
   title: "Hello Kitty Coloring Pages",
   description:
     "Browse and color cute Hello Kitty coloring pages online. Fun, free, and made for kids!",
+  ...(siteUrl ? { metadataBase: new URL(siteUrl) } : {}),
+  openGraph: {
+    title: "Hello Kitty Coloring Pages",
+    description:
+      "Browse and color cute Hello Kitty coloring pages online. Fun, free, and made for kids!",
+    type: "website",
+    locale: "en_US",
+    siteName: "Hello Kitty Coloring Pages",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hello Kitty Coloring Pages",
+    description:
+      "Browse and color cute Hello Kitty coloring pages online. Fun, free, and made for kids!",
+  },
 };
 
 export default function RootLayout({

@@ -1,5 +1,6 @@
 "use client";
 
+import { useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { ColoringPageCard } from "@/components/gallery/ColoringPageCard";
 import {
@@ -12,24 +13,51 @@ export function GalleryContent() {
   const searchParams = useSearchParams();
   const categoryParam = searchParams.get("category") ?? "all";
   const sortParam = searchParams.get("sort");
+  const [query, setQuery] = useState("");
 
   const activeCategory = CATEGORIES.some((c) => c.id === categoryParam)
     ? categoryParam
     : "all";
 
-  let pages = COLORING_PAGES;
+  const pages = useMemo(() => {
+    let result = COLORING_PAGES;
 
-  if (sortParam === "popular") {
-    pages = pages.filter((page) => page.popular);
-  }
+    if (sortParam === "popular") {
+      result = result.filter((page) => page.popular);
+    }
 
-  if (activeCategory !== "all") {
-    pages = pages.filter((page) => page.category === (activeCategory as Category));
-  }
+    if (activeCategory !== "all") {
+      result = result.filter(
+        (page) => page.category === (activeCategory as Category),
+      );
+    }
+
+    const normalizedQuery = query.trim().toLowerCase();
+    if (normalizedQuery) {
+      result = result.filter(
+        (page) =>
+          page.title.toLowerCase().includes(normalizedQuery) ||
+          page.id.toLowerCase().includes(normalizedQuery),
+      );
+    }
+
+    return result;
+  }, [activeCategory, query, sortParam]);
 
   return (
     <>
-      <div className="flex flex-wrap gap-2">
+      <label className="block">
+        <span className="sr-only">Search coloring pages</span>
+        <input
+          type="search"
+          value={query}
+          onChange={(event) => setQuery(event.target.value)}
+          placeholder="Search pictures..."
+          className="min-h-12 w-full rounded-full border-2 border-[var(--kitty-pink)] bg-white px-5 font-display text-sm font-semibold text-[var(--ink-soft)] outline-none placeholder:text-[var(--ink-soft)]/45 focus:border-[var(--bow-red)] sm:text-base"
+        />
+      </label>
+
+      <div className="mt-4 flex flex-wrap gap-2">
         {CATEGORIES.map((category) => {
           const isActive = category.id === activeCategory;
           const href =
@@ -68,7 +96,9 @@ export function GalleryContent() {
             🎀
           </p>
           <p className="mt-3 font-display text-lg font-bold text-[var(--bow-red)]">
-            No coloring pages yet — check back soon!
+            {query.trim()
+              ? "No matches — try another search!"
+              : "No coloring pages yet — check back soon!"}
           </p>
         </div>
       ) : (

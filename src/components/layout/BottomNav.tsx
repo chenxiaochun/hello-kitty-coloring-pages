@@ -1,12 +1,13 @@
 import Link from "next/link";
 
 const NAV_ITEMS = [
-  { href: "/", label: "Home", icon: "🏠" },
-  { href: "/gallery", label: "Gallery", icon: "🖼️" },
+  { href: "/", label: "Home", icon: "🏠", key: "home" as const },
+  { href: "/gallery", label: "Gallery", icon: "🖼️", key: "gallery" as const },
+  { href: "/my-art", label: "My Art", icon: "🎨", key: "my-art" as const },
 ] as const;
 
 type BottomNavProps = {
-  active?: "home" | "gallery";
+  active?: "home" | "gallery" | "my-art";
 };
 
 export function BottomNav({ active = "home" }: BottomNavProps) {
@@ -17,9 +18,7 @@ export function BottomNav({ active = "home" }: BottomNavProps) {
     >
       <ul className="mx-auto flex max-w-lg items-center justify-center gap-3">
         {NAV_ITEMS.map((item) => {
-          const isActive =
-            (item.href === "/" && active === "home") ||
-            (item.href === "/gallery" && active === "gallery");
+          const isActive = active === item.key;
 
           return (
             <li key={item.href} className="flex-1">
