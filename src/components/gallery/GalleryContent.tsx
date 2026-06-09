@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { useSearchParams } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { ColoringPageCard } from "@/components/gallery/ColoringPageCard";
 import {
   CATEGORIES,
@@ -9,11 +9,32 @@ import {
   type Category,
 } from "@/lib/data/coloring-pages";
 
+function buildGalleryHref(
+  pathname: string,
+  searchParams: URLSearchParams,
+  updates: Record<string, string | null>,
+) {
+  const params = new URLSearchParams(searchParams.toString());
+
+  for (const [key, value] of Object.entries(updates)) {
+    if (value) {
+      params.set(key, value);
+    } else {
+      params.delete(key);
+    }
+  }
+
+  const query = params.toString();
+  return query ? `${pathname}?${query}` : pathname;
+}
+
 export function GalleryContent() {
+  const router = useRouter();
+  const pathname = usePathname();
   const searchParams = useSearchParams();
   const categoryParam = searchParams.get("category") ?? "all";
   const sortParam = searchParams.get("sort");
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState(() => searchParams.get("q") ?? "");
 
   const activeCategory = CATEGORIES.some((c) => c.id === categoryParam)
     ? categoryParam
@@ -44,14 +65,25 @@ export function GalleryContent() {
     return result;
   }, [activeCategory, query, sortParam]);
 
+  function handleSearchChange(value: string) {
+    setQuery(value);
+    router.replace(
+      buildGalleryHref(pathname, searchParams, {
+        q: value.trim() || null,
+      }),
+      { scroll: false },
+    );
+  }
+
   return (
     <>
       <label className="block">
         <span className="sr-only">Search coloring pages</span>
         <input
           type="search"
+          name="q"
           value={query}
-          onChange={(event) => setQuery(event.target.value)}
+          onChange={(event) => handleSearchChange(event.target.value)}
           placeholder="Search pictures..."
           className="min-h-12 w-full rounded-full border-2 border-[var(--kitty-pink)] bg-white px-5 font-display text-sm font-semibold text-[var(--ink-soft)] outline-none placeholder:text-[var(--ink-soft)]/45 focus:border-[var(--bow-red)] sm:text-base"
         />
@@ -60,14 +92,11 @@ export function GalleryContent() {
       <div className="mt-4 flex flex-wrap gap-2">
         {CATEGORIES.map((category) => {
           const isActive = category.id === activeCategory;
-          const href =
-            category.id === "all"
-              ? sortParam === "popular"
-                ? "/gallery?sort=popular"
-                : "/gallery"
-              : sortParam === "popular"
-                ? `/gallery?category=${category.id}&sort=popular`
-                : `/gallery?category=${category.id}`;
+          const href = buildGalleryHref(pathname, searchParams, {
+            category: category.id === "all" ? null : category.id,
+            sort: sortParam,
+            q: query.trim() || null,
+          });
 
           return (
             <a

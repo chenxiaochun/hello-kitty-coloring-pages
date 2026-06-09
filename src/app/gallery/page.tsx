@@ -1,13 +1,44 @@
+import type { Metadata } from "next";
 import { Suspense } from "react";
 import { BottomNav } from "@/components/layout/BottomNav";
 import { PageBackground } from "@/components/decor/PageBackground";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { GalleryContent } from "@/components/gallery/GalleryContent";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { SectionTitle } from "@/components/ui/SectionTitle";
+import {
+  buildBreadcrumbJsonLd,
+  buildGalleryItemListJsonLd,
+} from "@/lib/seo/json-ld";
+import { absoluteUrl, createSharedMetadata } from "@/lib/seo/site";
+
+export const metadata: Metadata = createSharedMetadata({
+  title: "Hello Kitty Coloring Pages Gallery",
+  description:
+    "Browse 35+ free Hello Kitty coloring pages by category — Friends, Holidays, and Daily Life. Pick a picture and start coloring online.",
+  alternates: {
+    canonical: "/gallery",
+  },
+  openGraph: {
+    title: "Hello Kitty Coloring Pages Gallery",
+    description:
+      "Browse free Hello Kitty coloring pages and start coloring online instantly.",
+    url: absoluteUrl("/gallery"),
+  },
+});
 
 export default function GalleryPage() {
   return (
     <PageBackground>
+      <JsonLd
+        data={[
+          buildGalleryItemListJsonLd(),
+          buildBreadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: "Gallery", path: "/gallery" },
+          ]),
+        ]}
+      />
       <SiteHeader />
       <main className="mx-auto max-w-5xl px-0 pb-28 pt-2">
         <section className="animate-fade-up px-4 sm:px-6">
