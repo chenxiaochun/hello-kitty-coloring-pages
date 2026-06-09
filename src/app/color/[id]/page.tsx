@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { ColorCanvas } from "@/components/color/ColorCanvas";
+import { ColorPageSeoSection } from "@/components/seo/ColorPageSeoSection";
 import { JsonLd } from "@/components/seo/JsonLd";
 import {
   COLORING_PAGES,
@@ -42,6 +43,7 @@ export default async function ColorPage({ params }: ColorPageProps) {
     <>
       <JsonLd data={buildColorPageJsonLd(page)} />
       <ColorCanvas page={page} />
+      <ColorPageSeoSection page={page} />
     </>
   );
 }

@@ -19,10 +19,11 @@ export function HeroBanner() {
           </div>
           <div className="max-w-xl">
             <h1 className="font-display text-2xl font-bold text-[var(--bow-red)] sm:text-3xl">
-              Welcome to the Coloring Playground!
+              Free Hello Kitty Coloring Pages Online
             </h1>
             <p className="mt-2 text-base font-semibold text-[var(--ink-soft)] sm:text-lg">
-              Pick a picture, grab your colors, and create something sweet.
+              Welcome to the coloring playground — pick a picture, grab your
+              colors, and create something sweet.
             </p>
           </div>
         </div>

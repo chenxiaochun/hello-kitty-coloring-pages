@@ -4,12 +4,13 @@ import { BottomNav } from "@/components/layout/BottomNav";
 import { PageBackground } from "@/components/decor/PageBackground";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { GalleryContent } from "@/components/gallery/GalleryContent";
+import { GallerySeoSection } from "@/components/seo/GallerySeoSection";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { SectionTitle } from "@/components/ui/SectionTitle";
 import {
   buildBreadcrumbJsonLd,
   buildGalleryItemListJsonLd,
 } from "@/lib/seo/json-ld";
+import { buildGalleryFaqJsonLd } from "@/lib/seo/page-content";
 import { absoluteUrl, createSharedMetadata } from "@/lib/seo/site";
 
 export const metadata: Metadata = createSharedMetadata({
@@ -33,6 +34,7 @@ export default function GalleryPage() {
       <JsonLd
         data={[
           buildGalleryItemListJsonLd(),
+          buildGalleryFaqJsonLd(),
           buildBreadcrumbJsonLd([
             { name: "Home", path: "/" },
             { name: "Gallery", path: "/gallery" },
@@ -42,7 +44,12 @@ export default function GalleryPage() {
       <SiteHeader />
       <main className="mx-auto max-w-5xl px-0 pb-28 pt-2">
         <section className="animate-fade-up px-4 sm:px-6">
-          <SectionTitle sparkle>Gallery</SectionTitle>
+          <h1 className="font-display text-xl font-bold text-[var(--bow-red)] sm:text-2xl">
+            Hello Kitty Coloring Pages Gallery
+            <span aria-hidden className="ml-2 inline-block text-lg">
+              ✨
+            </span>
+          </h1>
           <p className="mt-1 text-sm font-semibold text-[var(--ink-soft)]/80 sm:text-base">
             Tap a picture to start coloring!
           </p>
@@ -52,6 +59,9 @@ export default function GalleryPage() {
             <GalleryContent />
           </Suspense>
         </section>
+        <div className="px-4 sm:px-6">
+          <GallerySeoSection />
+        </div>
       </main>
       <BottomNav active="gallery" />
     </PageBackground>
