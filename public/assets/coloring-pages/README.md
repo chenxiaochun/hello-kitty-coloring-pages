@@ -9,7 +9,7 @@ Each page folder contains a high-quality line art image used by the gallery and 
 
 ## Current assets
 
-35 **AI-generated Hello Kitty** coloring pages. Source PNGs live in `_ai-source/` (gitignored); processed JPGs are committed under this folder.
+53 **AI-generated Hello Kitty** coloring pages. Source PNGs live in `_ai-source/` (gitignored); processed JPGs are committed under this folder.
 
 ## Install from AI source PNGs
 

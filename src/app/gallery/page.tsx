@@ -16,7 +16,7 @@ import { absoluteUrl, createSharedMetadata } from "@/lib/seo/site";
 export const metadata: Metadata = createSharedMetadata({
   title: "Hello Kitty Coloring Pages Gallery",
   description:
-    "Browse 35+ free Hello Kitty coloring pages by category — Friends, Holidays, and Daily Life. Pick a picture and start coloring online.",
+    "Browse 50+ free Hello Kitty coloring pages by category — Friends, Holidays, and Daily Life. Pick a picture and start coloring online.",
   alternates: {
     canonical: "/gallery",
   },

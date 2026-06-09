@@ -20,6 +20,7 @@ import {
   compositeArtwork,
   downloadDataUrl,
   printDataUrl,
+  shareArtwork,
 } from "@/lib/color/export-artwork";
 import { floodFill, loadLineArtData } from "@/lib/color/flood-fill";
 import {
@@ -52,6 +53,11 @@ export function ColorCanvas({ page }: ColorCanvasProps) {
   const [lineArtReady, setLineArtReady] = useState(false);
   const [artSize, setArtSize] = useState<LineArtDimensions>(DEFAULT_LINE_ART_SIZE);
   const [showCelebration, setShowCelebration] = useState(false);
+  const [canShare, setCanShare] = useState(false);
+
+  useEffect(() => {
+    setCanShare(typeof navigator !== "undefined" && Boolean(navigator.share));
+  }, []);
 
   const saveSnapshot = useCallback(() => {
     const canvas = canvasRef.current;
@@ -270,6 +276,19 @@ export function ColorCanvas({ page }: ColorCanvasProps) {
     }
   }
 
+  async function handleShare() {
+    setIsExporting(true);
+    try {
+      const dataUrl = await exportArtwork();
+      const result = await shareArtwork(dataUrl, page.title);
+      if (result === "unsupported") {
+        downloadDataUrl(dataUrl, `${page.id}-colored.png`);
+      }
+    } finally {
+      setIsExporting(false);
+    }
+  }
+
   async function handlePrint() {
     setIsExporting(true);
     try {
@@ -284,27 +303,37 @@ export function ColorCanvas({ page }: ColorCanvasProps) {
     coloringMode === "magic-fill" ? "cursor-pointer" : "cursor-crosshair";
 
   return (
-    <div className="flex min-h-screen flex-col bg-[var(--cream-white)]">
+    <div className="flex h-[100dvh] flex-col overflow-hidden bg-[var(--cream-white)]">
       <CelebrationOverlay
         show={showCelebration}
         onDone={() => setShowCelebration(false)}
       />
-      <header className="flex items-center justify-between gap-3 border-b-2 border-[var(--soft-pink)] bg-white px-4 py-3">
+      <header className="flex shrink-0 items-center justify-between gap-2 border-b-2 border-[var(--soft-pink)] bg-white px-3 py-3 pt-[max(0.75rem,env(safe-area-inset-top))] sm:gap-3 sm:px-4">
         <Link
           href="/gallery"
-          className="flex min-h-12 items-center justify-center rounded-full border-2 border-[var(--kitty-pink)] bg-[var(--soft-pink)] px-4 font-display text-sm font-bold text-[var(--bow-red)] active:scale-95"
+          className="flex min-h-12 shrink-0 items-center justify-center rounded-full border-2 border-[var(--kitty-pink)] bg-[var(--soft-pink)] px-3 font-display text-sm font-bold text-[var(--bow-red)] active:scale-95 sm:px-4"
         >
           ← Back
         </Link>
-        <h1 className="truncate font-display text-base font-bold text-[var(--bow-red)] sm:text-lg">
+        <h1 className="min-w-0 flex-1 truncate text-center font-display text-sm font-bold text-[var(--bow-red)] sm:text-lg">
           {page.title}
         </h1>
-        <div className="flex gap-2">
+        <div className="flex shrink-0 gap-1.5 sm:gap-2">
+          {canShare ? (
+            <button
+              type="button"
+              disabled={isExporting}
+              onClick={handleShare}
+              className="min-h-12 rounded-full border-2 border-[var(--kitty-pink)] bg-[var(--soft-pink)] px-2.5 font-display text-xs font-bold text-[var(--bow-red)] active:scale-95 disabled:opacity-50 sm:px-4 sm:text-sm"
+            >
+              Share
+            </button>
+          ) : null}
           <button
             type="button"
             disabled={isExporting}
             onClick={handleSave}
-            className="min-h-12 rounded-full border-2 border-[var(--kitty-pink)] bg-white px-3 font-display text-xs font-bold text-[var(--ink-soft)] active:scale-95 disabled:opacity-50 sm:px-4 sm:text-sm"
+            className="min-h-12 rounded-full border-2 border-[var(--kitty-pink)] bg-white px-2.5 font-display text-xs font-bold text-[var(--ink-soft)] active:scale-95 disabled:opacity-50 sm:px-4 sm:text-sm"
           >
             Save
           </button>
@@ -312,14 +341,14 @@ export function ColorCanvas({ page }: ColorCanvasProps) {
             type="button"
             disabled={isExporting}
             onClick={handlePrint}
-            className="min-h-12 rounded-full border-2 border-[var(--bow-red)] bg-[var(--kitty-pink)] px-3 font-display text-xs font-bold text-white active:scale-95 disabled:opacity-50 sm:px-4 sm:text-sm"
+            className="min-h-12 rounded-full border-2 border-[var(--bow-red)] bg-[var(--kitty-pink)] px-2.5 font-display text-xs font-bold text-white active:scale-95 disabled:opacity-50 sm:px-4 sm:text-sm"
           >
             Print
           </button>
         </div>
       </header>
 
-      <div className="flex flex-1 flex-col items-center justify-center p-4">
+      <div className="flex min-h-0 flex-1 flex-col items-center justify-center overflow-y-auto p-3 pb-4 sm:p-4">
         <div
           className={`relative w-full max-w-2xl overflow-hidden rounded-[24px] border-2 border-[var(--kitty-pink)] bg-white shadow-[0_8px_0_var(--soft-pink)] transition-transform duration-200 ${
             fillPulse ? "scale-[1.01]" : ""
@@ -354,24 +383,26 @@ export function ColorCanvas({ page }: ColorCanvasProps) {
         </div>
       </div>
 
-      <ColorToolbar
-        coloringMode={coloringMode}
-        activeColor={activeColor}
-        tool={tool}
-        brushSize={brushSize}
-        canUndo={canUndo}
-        onColoringModeChange={setColoringMode}
-        onColorChange={(color) => {
-          setActiveColor(color);
-          if (coloringMode === "brush") {
-            setTool("brush");
-          }
-        }}
-        onToolChange={setTool}
-        onBrushSizeChange={setBrushSize}
-        onUndo={undo}
-        onClear={clearCanvas}
-      />
+      <div className="shrink-0">
+        <ColorToolbar
+          coloringMode={coloringMode}
+          activeColor={activeColor}
+          tool={tool}
+          brushSize={brushSize}
+          canUndo={canUndo}
+          onColoringModeChange={setColoringMode}
+          onColorChange={(color) => {
+            setActiveColor(color);
+            if (coloringMode === "brush") {
+              setTool("brush");
+            }
+          }}
+          onToolChange={setTool}
+          onBrushSizeChange={setBrushSize}
+          onUndo={undo}
+          onClear={clearCanvas}
+        />
+      </div>
     </div>
   );
 }

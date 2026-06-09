@@ -4,7 +4,7 @@ import type { ColoringPage } from "@/lib/data/coloring-pages";
 export const SITE_NAME = "Hello Kitty Coloring Pages";
 export const SITE_TAGLINE = "Free Online Coloring for Kids";
 export const SITE_DESCRIPTION =
-  "Browse 35+ free Hello Kitty coloring pages online. Paint with brush or magic fill, save your art, and print — fun for kids on phone, tablet, or desktop.";
+  "Browse 50+ free Hello Kitty coloring pages online. Paint with brush or magic fill, save your art, and print — fun for kids on phone, tablet, or desktop.";
 export const SITE_KEYWORDS = [
   "Hello Kitty coloring pages",
   "Hello Kitty coloring",

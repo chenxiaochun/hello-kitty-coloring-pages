@@ -53,8 +53,8 @@ export function ColorToolbar({
   const paletteDisabled = coloringMode === "brush" && tool === "eraser";
 
   return (
-    <footer className="border-t-2 border-[var(--soft-pink)] bg-white px-4 py-4 pb-[max(1rem,env(safe-area-inset-bottom))]">
-      <div className="mx-auto max-w-2xl space-y-4">
+    <footer className="border-t-2 border-[var(--soft-pink)] bg-white px-3 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] sm:px-4 sm:py-4">
+      <div className="mx-auto max-w-2xl space-y-3 sm:space-y-4">
         <div className="grid grid-cols-2 gap-2">
           <ModeButton
             active={coloringMode === "brush"}
@@ -166,7 +166,7 @@ function ModeButton({ active, label, description, icon, onClick }: ModeButtonPro
     <button
       type="button"
       onClick={onClick}
-      className={`flex min-h-16 flex-col items-center justify-center gap-1 rounded-[20px] border-2 px-3 py-3 font-display transition-transform active:scale-[0.98] ${
+      className={`flex min-h-14 flex-col items-center justify-center gap-0.5 rounded-[20px] border-2 px-2 py-2 font-display transition-transform active:scale-[0.98] sm:min-h-16 sm:gap-1 sm:px-3 sm:py-3 ${
         active
           ? "border-[var(--bow-red)] bg-[var(--kitty-pink)] text-white shadow-[0_4px_0_var(--bow-red)]"
           : "border-[var(--kitty-pink)] bg-white text-[var(--ink-soft)]"

@@ -38,6 +38,43 @@ export function downloadDataUrl(dataUrl: string, filename: string) {
   link.click();
 }
 
+export async function shareArtwork(
+  dataUrl: string,
+  title: string,
+): Promise<"shared" | "unsupported"> {
+  if (typeof navigator === "undefined" || !navigator.share) {
+    return "unsupported";
+  }
+
+  try {
+    const response = await fetch(dataUrl);
+    const blob = await response.blob();
+    const file = new File([blob], `${title.replace(/\s+/g, "-").toLowerCase()}.png`, {
+      type: "image/png",
+    });
+
+    if (navigator.canShare?.({ files: [file] })) {
+      await navigator.share({
+        title: `${title} — Hello Kitty Coloring`,
+        files: [file],
+      });
+      return "shared";
+    }
+
+    await navigator.share({
+      title: `${title} — Hello Kitty Coloring`,
+      text: `I colored ${title}!`,
+      url: window.location.href,
+    });
+    return "shared";
+  } catch (error) {
+    if (error instanceof DOMException && error.name === "AbortError") {
+      return "shared";
+    }
+    return "unsupported";
+  }
+}
+
 export function printDataUrl(dataUrl: string, title: string) {
   const printWindow = window.open("", "_blank");
   if (!printWindow) {

@@ -1,0 +1,94 @@
+{
+  "tasks": [
+    {
+      "prompt": "Pure black line art ONLY on white background. NO filled colors, NO gray shading, NO gradients, NO pre-colored areas. Every region must be empty white inside the outlines, ready for kids to color. Classic Hello Kitty Sanrio style outline, no mouth, whiskers, bow as empty outline only. Scene: Hello Kitty with backpack and school supplies on first day of school. Printable kids coloring page.",
+      "image": "_ai-source/school-kitty.png",
+      "ar": "3:4"
+    },
+    {
+      "prompt": "Pure black line art ONLY on white background. NO filled colors, NO gray shading, NO gradients, NO pre-colored areas. Every region must be empty white inside the outlines, ready for kids to color. Classic Hello Kitty Sanrio style outline, no mouth, whiskers, bow as empty outline only. Scene: Hello Kitty reading books in a library with bookshelves. Printable kids coloring page.",
+      "image": "_ai-source/library-kitty.png",
+      "ar": "3:4"
+    },
+    {
+      "prompt": "Pure black line art ONLY on white background. NO filled colors, NO gray shading, NO gradients, NO pre-colored areas. Every region must be empty white inside the outlines, ready for kids to color. Classic Hello Kitty Sanrio style outline, no mouth, whiskers, bow as empty outline only. Scene: Hello Kitty waving from a cute train window with tracks. Printable kids coloring page.",
+      "image": "_ai-source/train-kitty.png",
+      "ar": "3:4"
+    },
+    {
+      "prompt": "Pure black line art ONLY on white background. NO filled colors, NO gray shading, NO gradients, NO pre-colored areas. Every region must be empty white inside the outlines, ready for kids to color. Classic Hello Kitty Sanrio style outline, no mouth, whiskers, bow as empty outline only. Scene: Hello Kitty as passenger on airplane with clouds outside window. Printable kids coloring page.",
+      "image": "_ai-source/airplane-kitty.png",
+      "ar": "3:4"
+    },
+    {
+      "prompt": "Pure black line art ONLY on white background. NO filled colors, NO gray shading, NO gradients, NO pre-colored areas. Every region must be empty white inside the outlines, ready for kids to color. Classic Hello Kitty Sanrio style outline, no mouth, whiskers, bow as empty outline only. Scene: Hello Kitty visiting a farm with barn, chickens, and tractor. Printable kids coloring page.",
+      "image": "_ai-source/farm-kitty.png",
+      "ar": "3:4"
+    },
+    {
+      "prompt": "Pure black line art ONLY on white background. NO filled colors, NO gray shading, NO gradients, NO pre-colored areas. Every region must be empty white inside the outlines, ready for kids to color. Classic Hello Kitty Sanrio style outline, no mouth, whiskers, bow as empty outline only. Scene: Hello Kitty in ballet tutu dancing on stage. Printable kids coloring page.",
+      "image": "_ai-source/ballet-kitty.png",
+      "ar": "3:4"
+    },
+    {
+      "prompt": "Pure black line art ONLY on white background. NO filled colors, NO gray shading, NO gradients, NO pre-colored areas. Every region must be empty white inside the outlines, ready for kids to color. Classic Hello Kitty Sanrio style outline, no mouth, whiskers, bow as empty outline only. Scene: Hello Kitty planting flowers in garden with watering can. Printable kids coloring page.",
+      "image": "_ai-source/gardening-kitty.png",
+      "ar": "3:4"
+    },
+    {
+      "prompt": "Pure black line art ONLY on white background. NO filled colors, NO gray shading, NO gradients, NO pre-colored areas. Every region must be empty white inside the outlines, ready for kids to color. Classic Hello Kitty Sanrio style outline, no mouth, whiskers, bow as empty outline only. Scene: Hello Kitty pushing shopping cart in supermarket aisle. Printable kids coloring page.",
+      "image": "_ai-source/supermarket-kitty.png",
+      "ar": "3:4"
+    },
+    {
+      "prompt": "Pure black line art ONLY on white background. NO filled colors, NO gray shading, NO gradients, NO pre-colored areas. Every region must be empty white inside the outlines, ready for kids to color. Classic Hello Kitty Sanrio style outline, no mouth, whiskers, bow as empty outline only. Scene: Hello Kitty in hot air balloon basket floating above clouds. Printable kids coloring page.",
+      "image": "_ai-source/hot-air-balloon-kitty.png",
+      "ar": "3:4"
+    },
+    {
+      "prompt": "Pure black line art ONLY on white background. NO filled colors, NO gray shading, NO gradients, NO pre-colored areas. Every region must be empty white inside the outlines, ready for kids to color. Classic Hello Kitty Sanrio style outline, no mouth, whiskers, bow as empty outline only. Scene: Hello Kitty at dentist chair with toothbrush and smile mirror. Printable kids coloring page.",
+      "image": "_ai-source/dentist-kitty.png",
+      "ar": "3:4"
+    },
+    {
+      "prompt": "Pure black line art ONLY on white background. NO filled colors, NO gray shading, NO gradients, NO pre-colored areas. Every region must be empty white inside the outlines, ready for kids to color. Classic Hello Kitty Sanrio style outline, no mouth, whiskers, bow as empty outline only. Scene: Hello Kitty at Thanksgiving table with turkey and pie. Printable kids coloring page.",
+      "image": "_ai-source/thanksgiving-kitty.png",
+      "ar": "3:4"
+    },
+    {
+      "prompt": "Pure black line art ONLY on white background. NO filled colors, NO gray shading, NO gradients, NO pre-colored areas. Every region must be empty white inside the outlines, ready for kids to color. Classic Hello Kitty Sanrio style outline, no mouth, whiskers, bow as empty outline only. Scene: Hello Kitty watching fireworks in night sky. Printable kids coloring page.",
+      "image": "_ai-source/fireworks-kitty.png",
+      "ar": "3:4"
+    },
+    {
+      "prompt": "Pure black line art ONLY on white background. NO filled colors, NO gray shading, NO gradients, NO pre-colored areas. Every region must be empty white inside the outlines, ready for kids to color. Classic Hello Kitty Sanrio style outline, no mouth, whiskers, bow as empty outline only. Scene: Hello Kitty celebrating New Year with party hat and confetti. Printable kids coloring page.",
+      "image": "_ai-source/new-year-kitty.png",
+      "ar": "3:4"
+    },
+    {
+      "prompt": "Pure black line art ONLY on white background. NO filled colors, NO gray shading, NO gradients, NO pre-colored areas. Every region must be empty white inside the outlines, ready for kids to color. Classic Hello Kitty Sanrio style outline, no mouth, whiskers, bow as empty outline only. Scene: Hello Kitty giving flowers to mom for Mother's Day. Printable kids coloring page.",
+      "image": "_ai-source/mothers-day-kitty.png",
+      "ar": "3:4"
+    },
+    {
+      "prompt": "Pure black line art ONLY on white background. NO filled colors, NO gray shading, NO gradients, NO pre-colored areas. Every region must be empty white inside the outlines, ready for kids to color. Classic Hello Kitty Sanrio style outline, no mouth, whiskers, bow as empty outline only. Scene: Hello Kitty picking pumpkins in autumn pumpkin patch. Printable kids coloring page.",
+      "image": "_ai-source/pumpkin-patch-kitty.png",
+      "ar": "3:4"
+    },
+    {
+      "prompt": "Pure black line art ONLY on white background. NO filled colors, NO gray shading, NO gradients, NO pre-colored areas. Every region must be empty white inside the outlines, ready for kids to color. Classic Hello Kitty Sanrio style outline, no mouth, whiskers, bow as empty outline only. Scene: Hello Kitty at pajama party with pillows and stuffed animals. Printable kids coloring page.",
+      "image": "_ai-source/pajama-party-kitty.png",
+      "ar": "3:4"
+    },
+    {
+      "prompt": "Pure black line art ONLY on white background. NO filled colors, NO gray shading, NO gradients, NO pre-colored areas. Every region must be empty white inside the outlines, ready for kids to color. Classic Hello Kitty Sanrio style outline, no mouth, whiskers, bow as empty outline only. Scene: Hello Kitty and friends having picnic in park with blanket and basket. Printable kids coloring page.",
+      "image": "_ai-source/picnic-friends-kitty.png",
+      "ar": "3:4"
+    },
+    {
+      "prompt": "Pure black line art ONLY on white background. NO filled colors, NO gray shading, NO gradients, NO pre-colored areas. Every region must be empty white inside the outlines, ready for kids to color. Classic Hello Kitty Sanrio style outline with My Melody friend rabbit, no mouth, empty outlines only. Scene: Hello Kitty and My Melody having tea party together. Printable kids coloring page.",
+      "image": "_ai-source/my-melody-kitty.png",
+      "ar": "3:4"
+    }
+  ]
+}

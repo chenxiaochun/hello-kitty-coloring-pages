@@ -252,5 +252,132 @@
     "category": "daily-life",
     "sourceFile": "sleepy-kitty.png",
     "aiGenerated": true
+  },
+  {
+    "id": "school-kitty",
+    "title": "First Day of School",
+    "category": "daily-life",
+    "sourceFile": "school-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "library-kitty",
+    "title": "Library Visit",
+    "category": "daily-life",
+    "sourceFile": "library-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "train-kitty",
+    "title": "Train Ride",
+    "category": "daily-life",
+    "sourceFile": "train-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "airplane-kitty",
+    "title": "Airplane Trip",
+    "category": "daily-life",
+    "sourceFile": "airplane-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "farm-kitty",
+    "title": "Farm Visit",
+    "category": "daily-life",
+    "sourceFile": "farm-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "ballet-kitty",
+    "title": "Ballet Dance",
+    "category": "daily-life",
+    "sourceFile": "ballet-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "gardening-kitty",
+    "title": "Planting Flowers",
+    "category": "daily-life",
+    "sourceFile": "gardening-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "supermarket-kitty",
+    "title": "Grocery Shopping",
+    "category": "daily-life",
+    "sourceFile": "supermarket-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "hot-air-balloon-kitty",
+    "title": "Hot Air Balloon",
+    "category": "daily-life",
+    "sourceFile": "hot-air-balloon-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "dentist-kitty",
+    "title": "Dentist Visit",
+    "category": "daily-life",
+    "sourceFile": "dentist-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "thanksgiving-kitty",
+    "title": "Thanksgiving Feast",
+    "category": "holidays",
+    "sourceFile": "thanksgiving-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "fireworks-kitty",
+    "title": "Fireworks Night",
+    "category": "holidays",
+    "sourceFile": "fireworks-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "new-year-kitty",
+    "title": "New Year Party",
+    "category": "holidays",
+    "sourceFile": "new-year-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "mothers-day-kitty",
+    "title": "Mother's Day",
+    "category": "holidays",
+    "sourceFile": "mothers-day-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "pumpkin-patch-kitty",
+    "title": "Pumpkin Patch",
+    "category": "holidays",
+    "sourceFile": "pumpkin-patch-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "pajama-party-kitty",
+    "title": "Pajama Party",
+    "category": "friends",
+    "sourceFile": "pajama-party-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "picnic-friends-kitty",
+    "title": "Park Picnic",
+    "category": "friends",
+    "sourceFile": "picnic-friends-kitty.png",
+    "aiGenerated": true
+  },
+  {
+    "id": "my-melody-kitty",
+    "title": "My Melody Tea",
+    "category": "friends",
+    "popular": true,
+    "sourceFile": "my-melody-kitty.png",
+    "aiGenerated": true
   }
 ]

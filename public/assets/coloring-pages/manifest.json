@@ -243,5 +243,131 @@
     "width": 791,
     "height": 527,
     "sourceFile": "sleepy-kitty.png"
+  },
+  {
+    "id": "school-kitty",
+    "lineArtSrc": "/assets/coloring-pages/school-kitty/line-art.jpg",
+    "width": 791,
+    "height": 527,
+    "sourceFile": "school-kitty.png"
+  },
+  {
+    "id": "library-kitty",
+    "lineArtSrc": "/assets/coloring-pages/library-kitty/line-art.jpg",
+    "width": 791,
+    "height": 527,
+    "sourceFile": "library-kitty.png"
+  },
+  {
+    "id": "train-kitty",
+    "lineArtSrc": "/assets/coloring-pages/train-kitty/line-art.jpg",
+    "width": 791,
+    "height": 527,
+    "sourceFile": "train-kitty.png"
+  },
+  {
+    "id": "airplane-kitty",
+    "lineArtSrc": "/assets/coloring-pages/airplane-kitty/line-art.jpg",
+    "width": 791,
+    "height": 527,
+    "sourceFile": "airplane-kitty.png"
+  },
+  {
+    "id": "farm-kitty",
+    "lineArtSrc": "/assets/coloring-pages/farm-kitty/line-art.jpg",
+    "width": 791,
+    "height": 527,
+    "sourceFile": "farm-kitty.png"
+  },
+  {
+    "id": "ballet-kitty",
+    "lineArtSrc": "/assets/coloring-pages/ballet-kitty/line-art.jpg",
+    "width": 791,
+    "height": 527,
+    "sourceFile": "ballet-kitty.png"
+  },
+  {
+    "id": "gardening-kitty",
+    "lineArtSrc": "/assets/coloring-pages/gardening-kitty/line-art.jpg",
+    "width": 791,
+    "height": 527,
+    "sourceFile": "gardening-kitty.png"
+  },
+  {
+    "id": "supermarket-kitty",
+    "lineArtSrc": "/assets/coloring-pages/supermarket-kitty/line-art.jpg",
+    "width": 791,
+    "height": 527,
+    "sourceFile": "supermarket-kitty.png"
+  },
+  {
+    "id": "hot-air-balloon-kitty",
+    "lineArtSrc": "/assets/coloring-pages/hot-air-balloon-kitty/line-art.jpg",
+    "width": 791,
+    "height": 527,
+    "sourceFile": "hot-air-balloon-kitty.png"
+  },
+  {
+    "id": "dentist-kitty",
+    "lineArtSrc": "/assets/coloring-pages/dentist-kitty/line-art.jpg",
+    "width": 791,
+    "height": 527,
+    "sourceFile": "dentist-kitty.png"
+  },
+  {
+    "id": "thanksgiving-kitty",
+    "lineArtSrc": "/assets/coloring-pages/thanksgiving-kitty/line-art.jpg",
+    "width": 791,
+    "height": 527,
+    "sourceFile": "thanksgiving-kitty.png"
+  },
+  {
+    "id": "fireworks-kitty",
+    "lineArtSrc": "/assets/coloring-pages/fireworks-kitty/line-art.jpg",
+    "width": 791,
+    "height": 527,
+    "sourceFile": "fireworks-kitty.png"
+  },
+  {
+    "id": "new-year-kitty",
+    "lineArtSrc": "/assets/coloring-pages/new-year-kitty/line-art.jpg",
+    "width": 791,
+    "height": 527,
+    "sourceFile": "new-year-kitty.png"
+  },
+  {
+    "id": "mothers-day-kitty",
+    "lineArtSrc": "/assets/coloring-pages/mothers-day-kitty/line-art.jpg",
+    "width": 791,
+    "height": 527,
+    "sourceFile": "mothers-day-kitty.png"
+  },
+  {
+    "id": "pumpkin-patch-kitty",
+    "lineArtSrc": "/assets/coloring-pages/pumpkin-patch-kitty/line-art.jpg",
+    "width": 791,
+    "height": 527,
+    "sourceFile": "pumpkin-patch-kitty.png"
+  },
+  {
+    "id": "pajama-party-kitty",
+    "lineArtSrc": "/assets/coloring-pages/pajama-party-kitty/line-art.jpg",
+    "width": 791,
+    "height": 527,
+    "sourceFile": "pajama-party-kitty.png"
+  },
+  {
+    "id": "picnic-friends-kitty",
+    "lineArtSrc": "/assets/coloring-pages/picnic-friends-kitty/line-art.jpg",
+    "width": 791,
+    "height": 527,
+    "sourceFile": "picnic-friends-kitty.png"
+  },
+  {
+    "id": "my-melody-kitty",
+    "lineArtSrc": "/assets/coloring-pages/my-melody-kitty/line-art.jpg",
+    "width": 791,
+    "height": 527,
+    "sourceFile": "my-melody-kitty.png"
   }
 ]
