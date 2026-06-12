@@ -72,6 +72,10 @@ export function createSharedMetadata(overrides: Metadata = {}): Metadata {
 
   return {
     metadataBase: new URL(siteUrl),
+    icons: {
+      icon: [{ url: "/favicon.ico", sizes: "any" }],
+      shortcut: ["/favicon.ico"],
+    },
     title: {
       default: SITE_NAME,
       template: `%s | ${SITE_NAME}`,
