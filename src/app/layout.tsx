@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Fredoka, Nunito } from "next/font/google";
+import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
 import { JsonLd } from "@/components/seo/JsonLd";
 import {
   buildWebApplicationJsonLd,
@@ -30,6 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${fredoka.variable} ${nunito.variable} h-full`}>
       <body className="flex min-h-full flex-col antialiased">
+        <GoogleAnalytics />
         <JsonLd data={[buildWebsiteJsonLd(), buildWebApplicationJsonLd()]} />
         {children}
       </body>
