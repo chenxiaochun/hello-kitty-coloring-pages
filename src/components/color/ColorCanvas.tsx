@@ -23,8 +23,8 @@ import {
   shareArtwork,
 } from "@/lib/color/export-artwork";
 import { floodFill, loadLineArtData } from "@/lib/color/flood-fill";
+import { getCanvasPoint } from "@/lib/color/canvas-point";
 import {
-  DEFAULT_LINE_ART_SIZE,
   loadLineArtDimensions,
   type LineArtDimensions,
 } from "@/lib/color/line-art-meta";
@@ -51,7 +51,7 @@ export function ColorCanvas({ page }: ColorCanvasProps) {
   const [isExporting, setIsExporting] = useState(false);
   const [fillPulse, setFillPulse] = useState(false);
   const [lineArtReady, setLineArtReady] = useState(false);
-  const [artSize, setArtSize] = useState<LineArtDimensions>(DEFAULT_LINE_ART_SIZE);
+  const [artSize, setArtSize] = useState<LineArtDimensions | null>(null);
   const [showCelebration, setShowCelebration] = useState(false);
   const [canShare, setCanShare] = useState(false);
 
@@ -92,8 +92,18 @@ export function ColorCanvas({ page }: ColorCanvasProps) {
   }, []);
 
   useEffect(() => {
+    setArtSize(null);
+    setLineArtReady(false);
+    lineArtDataRef.current = null;
+    historyRef.current = [];
+    historyIndexRef.current = 0;
+    setCanUndo(false);
+  }, [page.lineArtSrc]);
+
+  useEffect(() => {
+    if (!artSize) return;
     saveSnapshot();
-  }, [saveSnapshot]);
+  }, [artSize, saveSnapshot]);
 
   useEffect(() => {
     let cancelled = false;
@@ -129,14 +139,7 @@ export function ColorCanvas({ page }: ColorCanvasProps) {
     const canvas = canvasRef.current;
     if (!canvas) return null;
 
-    const rect = canvas.getBoundingClientRect();
-    const scaleX = canvas.width / rect.width;
-    const scaleY = canvas.height / rect.height;
-
-    return {
-      x: (event.clientX - rect.left) * scaleX,
-      y: (event.clientY - rect.top) * scaleY,
-    };
+    return getCanvasPoint(canvas, event.clientX, event.clientY);
   }
 
   function applyStrokeStyle(ctx: CanvasRenderingContext2D) {
@@ -246,15 +249,15 @@ export function ColorCanvas({ page }: ColorCanvasProps) {
 
   async function exportArtwork(): Promise<string> {
     const canvas = canvasRef.current;
-    if (!canvas) {
+    if (!canvas || !artSize) {
       throw new Error("Canvas not ready");
     }
 
     return compositeArtwork(
       canvas,
       page.lineArtSrc,
-      artSize.width,
-      artSize.height,
+      artSize!.width,
+      artSize!.height,
     );
   }
 
@@ -301,6 +304,7 @@ export function ColorCanvas({ page }: ColorCanvasProps) {
 
   const canvasCursor =
     coloringMode === "magic-fill" ? "cursor-pointer" : "cursor-crosshair";
+  const canvasReady = artSize !== null;
 
   return (
     <div className="flex h-[100dvh] flex-col overflow-hidden bg-[var(--cream-white)]">
@@ -322,7 +326,7 @@ export function ColorCanvas({ page }: ColorCanvasProps) {
           {canShare ? (
             <button
               type="button"
-              disabled={isExporting}
+              disabled={isExporting || !canvasReady}
               onClick={handleShare}
               className="min-h-12 rounded-full border-2 border-[var(--kitty-pink)] bg-[var(--soft-pink)] px-2.5 font-display text-xs font-bold text-[var(--bow-red)] active:scale-95 disabled:opacity-50 sm:px-4 sm:text-sm"
             >
@@ -331,7 +335,7 @@ export function ColorCanvas({ page }: ColorCanvasProps) {
           ) : null}
           <button
             type="button"
-            disabled={isExporting}
+            disabled={isExporting || !canvasReady}
             onClick={handleSave}
             className="min-h-12 rounded-full border-2 border-[var(--kitty-pink)] bg-white px-2.5 font-display text-xs font-bold text-[var(--ink-soft)] active:scale-95 disabled:opacity-50 sm:px-4 sm:text-sm"
           >
@@ -339,7 +343,7 @@ export function ColorCanvas({ page }: ColorCanvasProps) {
           </button>
           <button
             type="button"
-            disabled={isExporting}
+            disabled={isExporting || !canvasReady}
             onClick={handlePrint}
             className="min-h-12 rounded-full border-2 border-[var(--bow-red)] bg-[var(--kitty-pink)] px-2.5 font-display text-xs font-bold text-white active:scale-95 disabled:opacity-50 sm:px-4 sm:text-sm"
           >
@@ -349,38 +353,45 @@ export function ColorCanvas({ page }: ColorCanvasProps) {
       </header>
 
       <div className="flex min-h-0 flex-1 flex-col items-center justify-center overflow-y-auto p-3 pb-4 sm:p-4">
-        <div
-          className={`relative w-full max-w-2xl overflow-hidden rounded-[24px] border-2 border-[var(--kitty-pink)] bg-white shadow-[0_8px_0_var(--soft-pink)] transition-transform duration-200 ${
-            fillPulse ? "scale-[1.01]" : ""
-          }`}
-          style={{ aspectRatio: `${artSize.width} / ${artSize.height}` }}
-        >
-          <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
-            <LineArtImage
-              src={page.lineArtSrc}
-              alt={`${page.title} line art`}
-              priority
-              className="h-full w-full"
-            />
-          </div>
-          <canvas
-            ref={canvasRef}
-            width={artSize.width}
-            height={artSize.height}
-            className={`relative z-10 h-full w-full touch-none ${canvasCursor}`}
-            onPointerDown={handlePointerDown}
-            onPointerMove={draw}
-            onPointerUp={stopDrawing}
-            onPointerLeave={stopDrawing}
-            onPointerCancel={stopDrawing}
-            aria-label={`Coloring canvas for ${page.title}`}
-          />
-          {coloringMode === "magic-fill" && !lineArtReady ? (
-            <div className="absolute inset-0 z-20 flex items-center justify-center bg-white/60 font-display text-sm font-semibold text-[var(--ink-soft)]">
-              Loading magic fill...
+        {artSize ? (
+          <div
+            className={`relative w-full max-w-2xl overflow-hidden rounded-[24px] border-2 border-[var(--kitty-pink)] bg-white shadow-[0_8px_0_var(--soft-pink)] transition-shadow duration-200 ${
+              fillPulse ? "shadow-[0_10px_0_var(--soft-pink)]" : ""
+            }`}
+            style={{ aspectRatio: `${artSize.width} / ${artSize.height}` }}
+          >
+            <div className="pointer-events-none absolute inset-0">
+              <LineArtImage
+                src={page.lineArtSrc}
+                alt={`${page.title} line art`}
+                priority
+                fit="fill"
+                className="h-full w-full"
+              />
             </div>
-          ) : null}
-        </div>
+            <canvas
+              ref={canvasRef}
+              width={artSize.width}
+              height={artSize.height}
+              className={`absolute inset-0 z-10 h-full w-full touch-none ${canvasCursor}`}
+              onPointerDown={handlePointerDown}
+              onPointerMove={draw}
+              onPointerUp={stopDrawing}
+              onPointerLeave={stopDrawing}
+              onPointerCancel={stopDrawing}
+              aria-label={`Coloring canvas for ${page.title}`}
+            />
+            {coloringMode === "magic-fill" && !lineArtReady ? (
+              <div className="absolute inset-0 z-20 flex items-center justify-center bg-white/60 font-display text-sm font-semibold text-[var(--ink-soft)]">
+                Loading magic fill...
+              </div>
+            ) : null}
+          </div>
+        ) : (
+          <div className="flex h-48 w-full max-w-2xl items-center justify-center rounded-[24px] border-2 border-dashed border-[var(--kitty-pink)] bg-white font-display text-sm font-semibold text-[var(--ink-soft)]">
+            Loading coloring page...
+          </div>
+        )}
       </div>
 
       <div className="shrink-0">

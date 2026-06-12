@@ -5,7 +5,7 @@ export type LineArtDimensions = {
 
 export const DEFAULT_LINE_ART_SIZE: LineArtDimensions = {
   width: 791,
-  height: 928,
+  height: 527,
 };
 
 export function loadLineArtDimensions(src: string): Promise<LineArtDimensions> {
