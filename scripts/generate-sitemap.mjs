@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
- * Writes a static public/sitemap.xml for reliable Google Search Console fetch.
- * Run before `next build` so Vercel serves the file as a plain static asset.
+ * Writes static sitemap XML files into public/ for Google Search Console.
+ * Keeps format minimal: only <loc> + date-only <lastmod>, no priority tags.
  */
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import path from "node:path";
@@ -20,7 +20,7 @@ const catalog = JSON.parse(
   ),
 );
 
-const lastmod = new Date().toISOString();
+const lastmod = new Date().toISOString().slice(0, 10);
 
 function escapeXml(value) {
   return value
@@ -31,43 +31,29 @@ function escapeXml(value) {
     .replace(/'/g, "&apos;");
 }
 
-function urlEntry(loc, priority) {
-  return `  <url>
-    <loc>${escapeXml(loc)}</loc>
-    <lastmod>${lastmod}</lastmod>
-    <priority>${priority}</priority>
-  </url>`;
+function urlEntry(loc) {
+  return `<url><loc>${escapeXml(loc)}</loc><lastmod>${lastmod}</lastmod></url>`;
 }
 
-const staticRoutes = [
-  { path: "/", priority: "1.0" },
-  { path: "/gallery", priority: "0.9" },
-  { path: "/my-art", priority: "0.5" },
-];
-
-const entries = [
-  ...staticRoutes.map(({ path: p, priority }) =>
-    urlEntry(`${SITE}${p === "/" ? "" : p}`, priority),
-  ),
-  ...catalog.map((page) =>
-    urlEntry(
-      `${SITE}/color/${page.id}`,
-      page.popular ? "0.85" : "0.75",
-    ),
-  ),
+const urls = [
+  `${SITE}/`,
+  `${SITE}/gallery`,
+  `${SITE}/my-art`,
+  ...catalog.map((page) => `${SITE}/color/${page.id}`),
 ];
 
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${entries.join("\n")}
+${urls.map(urlEntry).join("\n")}
 </urlset>
 `;
 
 mkdirSync(path.join(ROOT, "public"), { recursive: true });
-const outPath = path.join(ROOT, "public/sitemap.xml");
-writeFileSync(outPath, xml, "utf8");
-// Alternate filename helps GSC recover from a cached "Couldn't fetch" on sitemap.xml.
-writeFileSync(path.join(ROOT, "public/sitemap-v2.xml"), xml, "utf8");
 
-console.log(`Wrote ${outPath} (${entries.length} URLs, site=${SITE})`);
-console.log("Also wrote public/sitemap-v2.xml (use in GSC if sitemap.xml stays stuck).");
+const outputs = ["sitemap.xml", "google-sitemap.xml"];
+for (const name of outputs) {
+  writeFileSync(path.join(ROOT, "public", name), xml, "utf8");
+}
+
+console.log(`Wrote ${outputs.join(", ")} (${urls.length} URLs, site=${SITE})`);
+console.log("GSC: delete old entries, submit google-sitemap.xml");
