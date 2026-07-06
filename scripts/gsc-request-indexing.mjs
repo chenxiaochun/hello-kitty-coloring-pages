@@ -9,7 +9,8 @@
  *
  * Opens Chrome with your profile. Keep the GSC tab in foreground; don't click away.
  */
-import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
+import { execSync } from "node:child_process";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { chromium } from "playwright";
@@ -28,10 +29,14 @@ const catalog = JSON.parse(
   ),
 );
 
+const SKIP_IDS = new Set(["my-art"]);
+
 const ALL_URLS = [
   `${SITE}/`,
   `${SITE}/gallery`,
-  ...catalog.map((p) => `${SITE}/color/${p.id}`),
+  ...catalog
+    .filter((p) => !SKIP_IDS.has(p.id))
+    .map((p) => `${SITE}/color/${p.id}`),
 ];
 
 function parseArgs() {
@@ -60,42 +65,84 @@ function parseArgs() {
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
+function assertChromeClosed(userDataDir) {
+  let chromeRunning = false;
+  try {
+    execSync('pgrep -x "Google Chrome"', { stdio: "ignore" });
+    chromeRunning = true;
+  } catch {
+    // Chrome not running
+  }
+
+  const lockPath = path.join(userDataDir, "SingletonLock");
+  if (chromeRunning || existsSync(lockPath)) {
+    console.error(
+      "Chrome 正在运行，脚本无法复用你的登录配置。\n\n" +
+        "请先完全退出 Chrome（macOS：Cmd+Q，Dock 上无圆点），再运行：\n" +
+        "  npm run gsc:day1\n",
+    );
+    process.exit(1);
+  }
+}
+
 async function inspectAndRequest(page, url) {
   const searchInput = page.locator('input[aria-label*="检查"]');
   await searchInput.click();
   await searchInput.fill(url);
   await sleep(400);
   await page.getByRole("button", { name: "搜索" }).click();
-  await sleep(8000);
+  const path = url.replace(SITE, "");
+  for (let i = 0; i < 45; i++) {
+    await sleep(2000);
+    const bodyText = await page.locator("body").innerText();
+    if (
+      bodyText.includes(path) &&
+      (bodyText.includes("网址已收录") || bodyText.includes("网址尚未收录"))
+    ) {
+      break;
+    }
+  }
 
   const bodyText = await page.locator("body").innerText();
   const indexed =
     bodyText.includes("网址已收录") || bodyText.includes("网页已编入索引");
   const notIndexed =
     bodyText.includes("网址尚未收录") || bodyText.includes("未编入索引");
+  const alreadyRequested = bodyText.includes("已请求编入索引");
 
   const requestBtn = page.getByRole("button", { name: /请求编入索引/ });
-  let requested = false;
+  let requested = alreadyRequested;
+  let requestSuccess = alreadyRequested;
   let requestError = null;
 
-  if (await requestBtn.count()) {
+  if (!alreadyRequested && (await requestBtn.count())) {
     try {
       await requestBtn.first().click({ timeout: 5000 });
       requested = true;
-      await sleep(5000);
-      const confirm = page.getByRole("button", {
-        name: /^(确定|知道了|提交|关闭)$/,
-      });
-      if (await confirm.count()) {
-        await confirm.first().click().catch(() => {});
-        await sleep(1500);
+      for (let i = 0; i < 90; i++) {
+        await sleep(2000);
+        const text = await page.locator("body").innerText();
+        if (text.includes("正在测试")) continue;
+        const confirm = page.getByRole("button", {
+          name: /^(确定|知道了)$/,
+        });
+        if (await confirm.count()) {
+          await confirm.first().click().catch(() => {});
+          requestSuccess = true;
+          await sleep(1000);
+          break;
+        }
+        if (text.includes("已请求编入索引")) {
+          requestSuccess = true;
+          break;
+        }
       }
     } catch (error) {
       requestError = String(error);
     }
   }
 
-  return { url, indexed, notIndexed, requested, requestError };
+  return { url, indexed, notIndexed, requested, requestSuccess, requestError };
 }
 
 async function main() {
@@ -108,7 +155,7 @@ async function main() {
   );
 
   console.log(`Requesting indexing for ${urls.length} URLs...`);
-  console.log("If Chrome asks to quit other instances, close Chrome and re-run.\n");
+  assertChromeClosed(userDataDir);
 
   const context = await chromium.launchPersistentContext(userDataDir, {
     channel: "chrome",
@@ -132,11 +179,13 @@ async function main() {
       const result = await inspectAndRequest(page, url);
       results.push(result);
       console.log(
-        result.requested
-          ? "requested"
+        result.requestSuccess
+          ? result.indexed
+            ? "indexed+requested"
+            : "requested"
           : result.indexed
-            ? "already indexed"
-            : "skipped",
+            ? "indexed only"
+            : "failed",
       );
     } catch (error) {
       const fail = { url, error: String(error) };
