@@ -5,6 +5,15 @@
   "scripts": {
     "dev": "next dev",
     "generate:sitemap": "node scripts/generate-sitemap.mjs",
+    "submit:indexnow": "node scripts/submit-indexnow.mjs",
+    "gsc:request-indexing": "node scripts/gsc-request-indexing.mjs",
+    "gsc:day1": "node scripts/gsc-request-indexing.mjs --day 1",
+    "gsc:day2": "node scripts/gsc-request-indexing.mjs --day 2",
+    "gsc:day3": "node scripts/gsc-request-indexing.mjs --day 3",
+    "gsc:day4": "node scripts/gsc-request-indexing.mjs --day 4",
+    "gsc:day5": "node scripts/gsc-request-indexing.mjs --day 5",
+    "gsc:day6": "node scripts/gsc-request-indexing.mjs --day 6",
+    "gsc:day7": "node scripts/gsc-request-indexing.mjs --day 7",
     "build": "npm run generate:sitemap && next build",
     "start": "next start",
     "lint": "eslint",
@@ -24,6 +33,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.7",
+    "playwright": "^1.49.1",
     "sharp": "^0.34.5",
     "tailwindcss": "^4",
     "typescript": "^5"

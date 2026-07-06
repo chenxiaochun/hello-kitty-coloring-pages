@@ -1,0 +1,111 @@
+{
+  "note": "GSC 每天提交 8～10 个 URL。每条需 1～2 分钟实际测试。先完全退出 Chrome 再跑脚本。",
+  "done": [
+    "https://hello-kitty-coloring-pages.fun/",
+    "https://hello-kitty-coloring-pages.fun/gallery",
+    "https://hello-kitty-coloring-pages.fun/color/school-kitty"
+  ],
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-07-06",
+      "label": "今天补完（热门 + 节日词）",
+      "urls": [
+        "https://hello-kitty-coloring-pages.fun/color/birthday-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/halloween-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/beach-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/unicorn-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/holiday-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/valentine-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/easter-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/best-friends-kitty"
+      ]
+    },
+    {
+      "day": 2,
+      "date": "2026-07-07",
+      "label": "热门页 + 冬季/太空",
+      "urls": [
+        "https://hello-kitty-coloring-pages.fun/color/garden-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/tea-time-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/starlight-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/boba-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/daniel-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/my-melody-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/snow-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/space-kitty"
+      ]
+    },
+    {
+      "day": 3,
+      "date": "2026-07-08",
+      "label": "日常场景 A",
+      "urls": [
+        "https://hello-kitty-coloring-pages.fun/color/spring-picnic-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/playground-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/butterfly-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/rainy-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/reading-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/baking-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/music-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/pool-kitty"
+      ]
+    },
+    {
+      "day": 4,
+      "date": "2026-07-09",
+      "label": "日常场景 B",
+      "urls": [
+        "https://hello-kitty-coloring-pages.fun/color/camping-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/fishing-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/skating-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/soccer-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/painter-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/kite-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/bicycle-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/gift-kitty"
+      ]
+    },
+    {
+      "day": 5,
+      "date": "2026-07-10",
+      "label": "日常场景 C",
+      "urls": [
+        "https://hello-kitty-coloring-pages.fun/color/candy-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/rainbow-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/pirate-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/sleepy-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/library-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/train-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/airplane-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/farm-kitty"
+      ]
+    },
+    {
+      "day": 6,
+      "date": "2026-07-11",
+      "label": "日常 + 节日",
+      "urls": [
+        "https://hello-kitty-coloring-pages.fun/color/ballet-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/gardening-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/supermarket-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/hot-air-balloon-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/dentist-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/thanksgiving-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/fireworks-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/new-year-kitty"
+      ]
+    },
+    {
+      "day": 7,
+      "date": "2026-07-12",
+      "label": "收尾",
+      "urls": [
+        "https://hello-kitty-coloring-pages.fun/color/mothers-day-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/pumpkin-patch-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/pajama-party-kitty",
+        "https://hello-kitty-coloring-pages.fun/color/picnic-friends-kitty"
+      ]
+    }
+  ]
+}
