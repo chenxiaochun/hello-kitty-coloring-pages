@@ -35,10 +35,11 @@ function urlEntry(loc) {
   return `<url><loc>${escapeXml(loc)}</loc><lastmod>${lastmod}</lastmod></url>`;
 }
 
+// Note: /my-art is intentionally excluded — it renders locally saved artwork
+// with no public/indexable content, so it should not be advertised to crawlers.
 const urls = [
   `${SITE}/`,
   `${SITE}/gallery`,
-  `${SITE}/my-art`,
   ...catalog.map((page) => `${SITE}/color/${page.id}`),
 ];
 
