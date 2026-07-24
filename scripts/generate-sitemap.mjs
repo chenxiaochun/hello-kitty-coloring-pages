@@ -51,10 +51,10 @@ ${urls.map(urlEntry).join("\n")}
 
 mkdirSync(path.join(ROOT, "public"), { recursive: true });
 
-const outputs = ["sitemap.xml", "google-sitemap.xml"];
+const outputs = ["sitemap.xml"];
 for (const name of outputs) {
   writeFileSync(path.join(ROOT, "public", name), xml, "utf8");
 }
 
 console.log(`Wrote ${outputs.join(", ")} (${urls.length} URLs, site=${SITE})`);
-console.log("GSC: delete old entries, submit google-sitemap.xml");
+console.log("GSC: keep only sitemap.xml submitted.");

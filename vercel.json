@@ -1,7 +1,19 @@
 {
+  "redirects": [
+    {
+      "source": "/google-sitemap.xml",
+      "destination": "/sitemap.xml",
+      "permanent": true
+    },
+    {
+      "source": "/sitemap-v2.xml",
+      "destination": "/sitemap.xml",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
-      "source": "/(sitemap.*\\.xml|google-sitemap\\.xml)",
+      "source": "/sitemap.xml",
       "headers": [
         {
           "key": "Content-Type",
